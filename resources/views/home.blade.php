@@ -113,7 +113,7 @@
                         <h2>Zoom Services</h2>
                         <p>Mintstint is the authorized Sales partner of Zoom. Our Unique Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus .
                             We’re here to help you connect, Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online. communicate, and express your ideas so you can get more done together. We’re proud to be trusted by millions of enterprises, small businesses, and individuals. Get Meetings, Phone and Chat together on any device.</p>
-                        <a href="#" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <a href="/zoom" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -141,7 +141,7 @@
                             <li>Easy to upgrade and add new updates</li>
                            <li> Using CRM can improve your lead records rate by 500%</li>
                         </uL></p>
-                        <a href="#" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <a href="/crm" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -167,7 +167,7 @@
                             An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.<br>
                             Sound engineering for creative advertising.<br>
                             Creative clips for advertising based on motion design software.<br></p>
-                        <a href="#" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <a href="/voiceover" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -186,7 +186,7 @@
                     <div class="message-box">                        
                         <h2>Designing and creating websites and E-Stores</h2>
                         <p>It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers. We are distinguished by providing web design and web development with the best designs and techniques, which makes your website smart, easy and attractive to your customers with a very easy control panel to control the contents of the site and professional site management, which makes your customers benefit from the work you offer through your website. We have experience, which makes us one of the best web design companies by providing our services to a large number of our customers, as a result of gaining the confidence of our customers in performing our work in the best ways and the best technologies.</p>
-                        <a href="#" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <a href="/design" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 

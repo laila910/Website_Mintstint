@@ -313,7 +313,7 @@ a img.aligncenter {
 	letter-spacing: 1px;
 	font-size: 14px;
 	position: relative;
-	text-transform: capitalize;
+	
 }
 .navbar-dark .navbar-nav .nav-link:hover{
 	color: #ffffff;
@@ -2647,3 +2647,18 @@ select.mobile-device {
     border-color: rgba(255, 255, 255, 0.6);
     color: rgba(255, 255, 255, 0.6);
 }
+details > summary {
+    padding: 4px;
+   color:#000;
+    background-color: #eeeeee;
+    border: none;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+  details > p {
+    background-color: #fff;
+    padding: 4px;
+    margin: 0;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }

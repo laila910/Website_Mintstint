@@ -138,6 +138,207 @@
 
                 
             </div><!-- end row -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="message-box">                        
+                        <h2>The Most Important Features of the online Store</h2>
+                       
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+
+                
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>Professional Control Panel</h3>
+                        <p>Help You manage and control the online store. add products. follow up orders,and view reports.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/1.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>Responsive Design</h3>
+                        <p> Attractive and professional Responsive Web Design compatible and responsive with all different devices.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/2.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+              
+
+                
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>Strong Protection</h3>
+                        <p>Fully Secure Your Online Store for Data and Protection from Hacking.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/3.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>Marketing Basket</h3>
+                        <p>The shopping Cart System(shopping cart) allows the visitor to add products to buy later.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/4.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+              
+
+                
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>Offering System</h3>
+                        <p>Add Discounts and offers on products for a limited time. in addition to coupons.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/5.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>A system For Tracking Orders. Shipping and Returning Products.</h3>
+                        <p>Number of sales, total value of orders, numbser of customers. number of ready orders, orders under processing, number of received and canceled orders.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/6.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+              
+
+                
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>General Settings</h3>
+                        <p>An account for each customer that allows him to add and purchase orders, follow up on their arrival and return, and communicate with the site.</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/7.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+               
+                <div class="col-md-3">
+                    <div class="message-box">                        
+                        <h3>Customer Service</h3>
+                        <p>The chat and technical support system works to follow up on solving problems for your customers (Live Chat).</p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col -->
+                <div class="col-md-3">
+                    <div class="left-box-pro wow fadeIn">
+                        <img src="assets/uploads/8.jpg" alt="" class="img-fluid img-rounded">
+                    </div><!-- end media -->
+                </div><!-- end col -->
+              
+
+                
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-12">
+                    <div class="message-box">                        
+                        <h2>Technical Details of The Online Store</h2>
+                        <p>
+                            <ul>
+                                <li>1.Attractive and Professional Responsive Web Design, Compatible and responsive with all computers and mobile devices.</li>
+                                <li>2.Add your social networking sites to the store.</li>
+                                <li>3.The Most Important Pages within the online stores (home-store-brands-special offers-blog-contact us).</li>
+                                <li>4.Add an infinite number of products with all product details, including product name,pictures,price,quantity,display Date and discounts.</li>
+                                <li>5.The Posibility of adding more than one main or sub-section or more than one sub-section and then the products.</li>
+                                <li>6.The User can search for products and add the desired products to buy them later.</li>
+                                <li>7.Add discounts and offers on products for a limited time, in addition to coupons</li>
+                                <li>8.Extract invoices or send them via e-mail.</li>
+                                <li>9.Strong and complete protection of online store files and comprehensive encryption of passwords and user information.</li>
+                                <li>10.The possibility of controlling members and managers and giving powers to each of them.
+                                </li>
+                                <li>11.The control panel helps you to modify all the features and features of the entire store easily.
+                                </li>
+                                <li>12.Send messages to all subscribers per site or a specific category by mail.
+                                </li>
+                                <li>13.Adding the shipping cost automatically to the purchase invoice according to the country and weight or number of the store control panel.
+                                </li>
+                                <li>14.Orders, shipping and product returns system.
+                                </li>
+                                <li>15.Site pages are compatible with search engines and SEO and store site map for quick archiving.
+                                </li>
+                                <li>16.Direct chat system with customers within the site (Live Chat).
+                                </li>
+                                <li>17.Comprehensive statistics and reports within the control panel, the most important products, orders, sales, invoices, and the most requested or purchased products.
+                                </li>
+                                <li>18.The ability to support several languages, several currencies, and specify the default currency for the store.
+                                </li>
+                            
+                        
+                           </ul>
+                        </p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col --> 
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-12">
+                    <div class="message-box">                        
+                        <h2>The Most Popular And WideSpread Online Stores</h2>
+                        <p>
+                            <ul>
+                                <li>1.Tourist website design.
+                                </li>
+                                <li>2.Website design for a real estate company.</li>
+                                <li>3.Online store design for women’s clothing.
+                                </li>
+                                <li>4.Clothing store design.
+                                </li>
+                                <li>5.Website design for a car showroom.
+                                </li>
+                                <li>6.Website design for a contracting company.
+                                </li>
+                           </ul>
+                        </p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col --> 
+            </div><!-- end row -->
+            <div class="row">
+               
+                <div class="col-md-12">
+                    <div class="message-box">                        
+                        <h2>How Much Are The Online Store Prices?</h2>
+                        <p>
+                            The prices of  E-stores vary according to the field of the online store, the type of programming, and the specifications and features of the store, as they differ from one e-store programming company to another.
+                        </p>
+                    </div><!-- end messagebox -->
+                </div><!-- end col --> 
+            </div><!-- end row -->
             
         </div><!-- end container -->
      

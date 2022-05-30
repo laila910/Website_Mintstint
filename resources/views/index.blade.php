@@ -56,12 +56,12 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
+          <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">Home</a>
+              <a class="nav-link js-scroll-trigger active" href="#home">{{trans('labels.Home')}}</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">About Us</a>
+              <a class="nav-link js-scroll-trigger" href="#about" >{{ trans('labels.About Us');}}</a>
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#services">Services</a>
@@ -76,11 +76,19 @@
               <a class="nav-link js-scroll-trigger" href="#team">Our Vendors</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#pricing">FAQ</a>
+              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
             </li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/en')}}">en</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/ar')}}">ar</a>
+			
+			</li>
+			
           </ul>
         </div>
       </div>
@@ -90,7 +98,7 @@
 		<div class="heading">
 			<h1>Welcome to Mintstint</h1>			
 			<h3 class="cd-headline clip is-full-width">
-				<span>Get More In Less Time <br><br> Great Tools = Happy Peopele</span>
+				<span>Get More In Less Time <br><br> Great Tools = Happy People</span>
 				<span class="cd-words-wrapper">
 					<b class="is-visible"></b>
 					<b>Zoom Services</b>

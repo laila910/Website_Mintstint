@@ -31,3 +31,11 @@ return view('voiceover');
 Route::get('/design',function(){
 return view('design');
 });
+Route::get('/faq',function(){
+    return view('faq');
+});
+
+Route::get('/Lang/{lang}',function($lang){
+   session()->put('lang',$lang);
+   return back();
+    });
