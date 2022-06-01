@@ -76,9 +76,7 @@
                   <a class="nav-link js-scroll-trigger" href="#events">Zoom Events</a>
 
               </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/">Home</a>
-            </li>
+            
           </ul>
         </div>
       </div>
@@ -86,9 +84,13 @@
 	
 	<section id="home" class="main-banner parallaxie" style="background: url('assets/uploads/b.jpg')">
 		<div class="heading">
-			<h1>Zoom Services</h1>			
+			<h1>@if(session('lang')=='ar'){{ trans('labels.Zoom Services')}}@endif
+                @if(session('lang')=='en'){{trans('labels.Zoom خدمات')}}@endif</h1>			
 			<h3 class="cd-headline clip is-full-width">
-				<span>Mintstint is the authorized Sales partner of Zoom.<br><br>Stay connected with your clients in a professional way and more</span>
+				<span>@if(session('lang')=='en') Mintstint is the authorized Sales partner of Zoom @endif
+                    @if(session('lang')=='ar')Zoom هو شريك المبيعات المعتمد لـ Mintstint @endif
+              <br><br>@if(session('lang')=='en'){{trans('labels.ابق على اتصال مع عملائك بطريقة احترافية والمزيد')}}@endif
+                @if(session('lang')=='ar'){{trans('labels.Stay connected with your clients in a professional way and more')}}@endif</span>
 				<span class="cd-words-wrapper">
 					<b class="is-visible"></b>
 					<b>Zoom Meetings</b>
@@ -102,6 +104,7 @@
                     <b>Developer Platform APIs & SDKs</b>
 				</span>
 			</h3>
+            
 		</div>
 	</section>
 
@@ -110,12 +113,11 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>Zoom Services</h2>
-                        <p>Mintstint is the authorized Sales partner of Zoom. Our Unique Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus .
-                            We’re here to help you connect, Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online. communicate, and express your ideas so you can get more done together. We’re proud to be trusted by millions of enterprises, small businesses, and individuals. Get Meetings, Phone and Chat together on any device:<br>
-                            1. Move from a chat or a phone call to a meeting with a single click.<br>
-                            2. Enjoy industry leading usability with top-rated video and audio quality.<br>
-                            3. Apps are available for Windows, MacOS and Linux as well as for iOS and Android OS.</p>
+                        <h2>@if(session('lang')=='ar') <h2 class="text-right"> {{ trans('labels.Zoom Services')}}</h2>@endif
+							@if(session('lang')=='en') {{trans('labels.Zoom خدمات')}}@endif</h2>
+                        <p>@if(session('lang')=='en') Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online. communicate, and express your ideas so you can get more done together. We’re proud to be trusted by millions of enterprises, small businesses, and individuals.<br> Get Meetings, Phone and Chat together on any device:-<br>1- Move from a chat or a phone call to a meeting with a single click.<br>2-Enjoy industry leading usability with top-rated video and audio quality.<br>3-Apps are available for Windows, MacOS and Linux as well as for iOS and Android OS.<br> @endif 
+							@if(session('lang')=='ar') <p class="text-right">  مينت ستنت هي الشريك المعتمد لزوم.خدماتنا الفريدة للتعليم والمؤسسات المهنية لا تقلق بشأن عملك بشأن التغيرات في فيرس كورونا وظهور طفرات الفيرس.<br> نحن هنا لمساعدتك علي الاتصال حيث توفر مينت ستنت حلولا تقنية لادارة علامتك التجارية عن بعد والحصول علي الافضل بسعر اقل من الانترنت.للتواصل والتعبير عن أفكارك حتي تتمكنو من انجازالمزيد معا .نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والافراد<br> احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز.<br> الانتقال من دردشة أو مكالمة هاتفية إلى اجتماع بنقرة واحدة. <br>استمتع بقابلية الاستخدام الرائدة في الصناعة مع جودة الفيديو والصوت الأعلى تصنيفًا.<br>
+                        Android OS و IOS وكذلك لنظامي التشغيل Linux و MacOS و windows التطبيقات متاحة لانظمة </p>@endif</p>
                        
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -131,19 +133,28 @@
     <div id="meetings" class="section wb">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                        <h2>Zoom Meetings</h2>
-                        <h3>CONFIDENTLY WORK FROM HOME</h3>
-                        <p>New features to help you work from home and have fun doing it: <br>
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="message-box text-right"> @endif  
+                        @if(session('lang')=='en') <div class="message-box">@endif                     
+                        <h2>@if(session('lang')=='en')Zoom Meetings @endif
+                        @if(session('lang')=='ar') <h2 class="text-right">Zoom Meetings</h2> @endif</h2>
+                        <h3>
+                            @if(session('lang')=='ar'){{trans('labels.CONFIDENTLY WORK FROM HOME')}}@endif
+                        @if(session('lang')=='en'){{trans('labels.العمل بثقة من المنزل')}}@endif</h3>
+                        <p>@if(session('lang')=='en'){{trans('labels.ميزات جديدة لمساعدتك على العمل من المنزل والاستمتاع بذلك')}}@endif @if(session('lang')=='ar'){{trans('labels.New features to help you work from home and have fun doing it:')}}@endif <br>
 
-                            1. Clear audio with advanced background noise suppression.<br>
-                            2. Share slides as your virtual background.<br>
-                            3. Feel camera ready with adjustable touch up Your appearance.<br>
-                            4. Look well lit in any situation by adjusting advanced lighting.<br>
-                            5. More reactions to let your feelings show.<br>
-                            6. Filters to bring some fun into your day.<br>
-                            7. Try Immersive View to make meetings more engaging.</p>
+                             @if(session('lang')=='en'){{trans('labels.صوت واضح مع قمع متقدم للضوضاء في الخلفية')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.Clear audio with advanced background noise suppression')}}@endif <br>
+                             @if(session('lang')=='en'){{trans('labels.مشاركة الشرائح كخلفية افتراضية خاصة بك')}}@endif 
+                            @if(session('lang')=='ar'){{trans('labels.Share slides as your virtual background')}}@endif<br>
+                             @if(session('lang')=='en'){{trans('labels.تمتع بكاميرا جاهزة مع لمسة قابلة للتعديل لمظهرك')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.Feel camera ready with adjustable touch up Your appearance')}}@endif <br>
+                             @if(session('lang')=='ar'){{trans('labels.Look well lit in any situation by adjusting advanced lighting')}}@endif @if(session('lang')=='en'){{trans('labels.تبدو مضاءة جيدًا في أي موقف من خلال ضبط الإضاءة المتقدمة')}}@endif<br>
+                             @if(session('lang')=='en'){{trans('labels.المزيد من التفاعلات التي تظهر مشاعرك')}}@endif 
+                            @if(session('lang')=='ar'){{trans('labels.More reactions to let your feelings show')}}@endif <br>
+                            @if(session('lang')=='ar'){{trans('labels.Filters to bring some fun into your day')}}@endif 
+                            @if(session('lang')=='en'){{trans('labels.مرشحات لإضفاء بعض المرح في يومك')}}@endif <br>
+                             @if(session('lang')=='ar'){{trans('labels.Try Immersive View to make meetings more engaging')}}@endif @if(session('lang')=='en'){{trans('labels.جرّب العرض الشامل لجعل الاجتماعات أكثر تفاعلاً وجاذبية')}}@endif </p>
                       
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -155,15 +166,13 @@
                 </div><!-- end col -->
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
+                <div class="col-md-6">@if(session('lang')=='en')  <div class="message-box">@endif
+                   @if(session('lang')=='ar') <div class="message-box text-right">  @endif                      
                        
-                        <h3>MODERNIZE YOUR MEETING SOLUTION</h3>
-                        <p>Zoom Meetings for desktop and mobile provide the tools to make every meeting a great one.<br>
+                        <h3>@if(session('lang')=='en') MODERNIZE YOUR MEETING SOLUTION </h3><br> Zoom Meetings for desktop and mobile provide the tools to make every meeting a great one <br>1- Focus on your meeting – click record to leave the note taking to Zoom’s auto-generated, searchable transcripts. <br>2- Share and play videos with full audio and video transmit without uploading the content. <br>3- Feel meeting ready with virtual backgrounds, touch up my appearance and lighting controls.@endif 
+                            @if(session('lang')=='ar') <h3>قم بتحديث اداة الاجتماع الخاص بك</h3> توفر لسطح المكتب والجوال الادوات اللازمة لجعل كل اجتماع اجتماعا رائعا <br> ركز على اجتماعك – انقر فوق “تسجيل” لترك تدوين الملاحظات لنصوص التي يتم إنشاؤها تلقائيًا والقابلة للبحث. <br> شارك وقم بتشغيل مقاطع الفيديو مع نقل الصوت والفيديو بالكامل دون تحميل المحتوى.<br>أشعر بالاستعداد للاجتماع مع الخلفيات الافتراضية، ولمس مظهرك وعناصر التحكم في الإضاءة.
+                            @endif
 
-                            1. Focus on your meeting – click record to leave the note taking to Zoom’s auto-generated, searchable transcripts.<br>
-                            2. Share and play videos with full audio and video transmit without uploading the content.<br>
-                            3. Feel meeting ready with virtual backgrounds, touch up my appearance and lighting controls.
 
                            </p>
                       
@@ -180,14 +189,17 @@
     </div><!-- end section -->
     <div id="phone" class="section wb">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
+            <div class="row">@if(session('lang')=='en') <div class="col-md-6"> @endif
+               @if(session('lang')=='ar') <div class="col-md-6 text-right">@endif
+                    <div class="message-box"> @if(session('lang')=='en')                       
                         <h2>Zoom Phone</h2><p>Zoom Phone is a feature-rich cloud phone system for businesses of all sizes.
                         </p>
-                            <strong>Simple and intuitive:</strong> Empower your end users to make phone calls with the same ease and familiarity as Zoom video meetings.<br><strong>Scalable and Trusted Communications:</strong> Global Coverage,Secure Communications, Trusted Architecture, Provider Flexibility, BYOC (Bring Your Own Carrier).<br><strong> for your evolving needs:</strong>Get Meetings, Phone and Chat together on any device.<br>1. Zoom Phone has a track record of rapid innovation, capitalizing on the established global infrastructure and audio quality of Zoom.<br>2. With hundreds of features, and more added every month, you can count on Zoom Phone to meet your business requirements.<br> 3. Zoom Phone tightly integrates with top business applications, contact center partners, and hardware providers to ensure communications can occur in context.<br>4. Leverage Zoom Phone's robust set of APIs to create customized business solutions that let you make and receive phone calls right within your workflow.<br>
-
-                      
+                            <strong>Simple and intuitive:</strong> Empower your end users to make phone calls with the same ease and familiarity as Zoom video meetings.<br><strong>Scalable and Trusted Communications:</strong> Global Coverage,Secure Communications, Trusted Architecture, Provider Flexibility, BYOC (Bring Your Own Carrier).<br><strong> for your evolving needs:</strong>Get Meetings, Phone and Chat together on any device.<br>1. Zoom Phone has a track record of rapid innovation, capitalizing on the established global infrastructure and audio quality of Zoom.<br>2. With hundreds of features, and more added every month, you can count on Zoom Phone to meet your business requirements.<br> 3. Zoom Phone tightly integrates with top business applications, contact center partners, and hardware providers to ensure communications can occur in context.<br>4. Leverage Zoom Phone's robust set of APIs to create customized business solutions that let you make and receive phone calls right within your workflow.<br>@endif
+                            @if(session('lang')=='ar')
+                            <h2>Zoom Phone</h2><p>هو نظام هاتف سحابي غني بالميزات للشركات من جميع الأحجام</p>
+                            بسيطة وبديهية: مكّن المستخدمين النهائيين لديك من إجراء مكالمات هاتفية بنفس السهولة والألفة التي تتمتع بها اجتماعات <br>
+                            اتصالات قابلة للتطوير وموثوق بها: التغطية العالمية ، والاتصالات الآمنة ، والبنية الموثوقة ، ومرونة المزود والناقل الخاص بك<br> مبتكرة لاحتياجاتك المتطورة: احصل على الاجتماعات والهاتف والدردشة معًا على أي جهاز. <br><br>     يتمتع بسجل حافل من الابتكار السريع ، مستفيدًا من البنية التحتية العالمية الراسخة وجودة الصوت .<br> مع مئات الميزات والمزيد المضاف كل شهر ، يمكنك الاعتماد على  لتلبية متطلبات عملك. <br> يتكامل  بإحكام مع أفضل تطبيقات الأعمال وشركاء مراكز الاتصال وموفري الأجهزة لضمان حدوث الاتصالات في السياق. <br> استفد من مجموعة واجهات برمجة التطبيقات القوية في  لإنشاء حلول أعمال مخصصة تتيح لك إجراء مكالمات هاتفية واستقبالها في إطار سير عملك.
+                            @endif
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -198,13 +210,24 @@
                 </div><!-- end col -->
             </div><br><br><br><br><br><br>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
+                <div class="col-md-6"> @if(session('lang')=='en') <div class="message-box">  @endif
+                   @if(session('lang')=='ar') <div class="message-box text-right"> @endif   
+                       @if(session('lang')=='en')               
                         <h2>A THOUGHTFUL APPROACH TO MOBILE MEETINGS </h2>
                            <p> Today’s professionals need to be able to work and video conference wherever they are. Zoom Meetings for mobile provides the same great experience that you’d expect from the desktop client and more.<br><br>
                             1. Turn on Virtual Backgrounds and select the image of your choice (iPhone 8+ required).<br><br>
                             2. Share your screen and co-annotate.<br><br>
                             3. Use Safe Driving Mode or Apple Carplay (iPhone only).<br><br><p>
+                                @endif 
+                            @if(session('lang')=='ar')
+                            <h2>نهج مدروس للاجتماعات بالهاتف </h2>
+                            <p>يحتاج المحترفون اليوم إلى أن يكونوا قادرين على العمل وعقد المؤتمرات عبر الفيديو أينما كانوا. يوفر  للجوال نفس التجربة الرائعة التي تتوقعها من عميل سطح المكتب والمزيد. <br><br>
+                                (+iPhone 8) قم بتشغيل الخلفيات الافتراضية وحدد الصورة التي تختارها <br>
+                                شارك شاشتك وأضف تعليقًا توضيحيًا مشتركًا <br>
+                                (iPhone فقط) Apple Carplay استخدم وضع القيادة الآمنة أو
+                            </p>
+
+                            @endif
                             
                            
                       
@@ -221,10 +244,11 @@
     </div><!-- end section -->
     <div id="chat" class="section wb">
         <div class="container">
-            <div class="row">
-                <div class="col-md-6">
+            <div class="row"> @if(session('lang')=='en') <div class="col-md-6"> @endif
+               @if(session('lang')=='ar') <div class="col-md-6 text-right"> @endif
                     <div class="message-box">                        
                         <h2>Zoom Chat</h2>
+                        @if(session('lang')=='en')
                         <p>Communicate Instantly On Zoom Chat<br><br>
                             Integrated persistent messaging streamlines workspace collaboration across the desktop and mobile clients.<br>
                             
@@ -232,6 +256,11 @@
                             or phone call.<br>
                             2. Share files and search content in public or private groups.<br>
                             3. Connect external users while keeping information safe.<br></p>
+                            @endif
+                        @if(session('lang')=='ar')
+                        <p>Zoom Chat تواصل على الفور على  <br><br> تعمل الرسائل المستمرة المتكاملة على تبسيط التعاون في مساحة العمل عبر عملاء سطح المكتب والأجهزة المحمولة.<br> ابدأ اجتماعًا أو مكالمة هاتفية على الفور.<br>
+                            مشاركة الملفات والبحث في المحتوى في مجموعات عامة أو خاصة.<br> ربط المستخدمين الخارجيين مع الحفاظ على المعلومات آمنة. </p>
+                        @endif
                         
                     </div><!-- end messagebox -->
                 </div><!-- end col -->

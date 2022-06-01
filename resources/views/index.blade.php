@@ -33,6 +33,7 @@
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	
 
 </head>
 <body id="page-top" class="politics_version">
@@ -58,36 +59,48 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger active" href="#home">{{trans('labels.Home')}}</a>
+              <a class="nav-link js-scroll-trigger active" href="#home">
+				  @if(app()->getLocale()=='ar'){{trans('labels.Home')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.الصفحة الرئيسية')}}@endif</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about" >{{ trans('labels.About Us');}}</a>
+              <a class="nav-link js-scroll-trigger" href="#about" >
+				@if(app()->getLocale()=='ar'){{ trans('labels.About Us')}}@endif
+			@if(app()->getLocale()=='en'){{trans('labels.عننا')}}@endif</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+              <a class="nav-link js-scroll-trigger" href="#services">@if(app()->getLocale()=='ar'){{ trans('labels.Services')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.الخدمات')}}@endif</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Our Partners</a>
+              <a class="nav-link js-scroll-trigger" href="#portfolio">@if(app()->getLocale()=='ar'){{ trans('labels.Our Partners')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.شركائنا')}}@endif</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#blog">Blog</a>
+              <a class="nav-link js-scroll-trigger" href="#blog">@if(app()->getLocale()=='ar'){{ trans('labels.Blog')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.المدونة')}}@endif</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#team">Our Vendors</a>
+              <a class="nav-link js-scroll-trigger" href="#team">@if(app()->getLocale()=='ar'){{ trans('labels.Our Vendors')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.موردينا')}}@endif</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/faq">FAQ</a>
+              <a class="nav-link js-scroll-trigger" href="/faq">@if(app()->getLocale()=='ar'){{ trans('labels.FAQ')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.الاسئلة الشائعة')}}@endif</a>
             </li>
 			<li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Contact Us</a>
+              <a class="nav-link js-scroll-trigger" href="#contact">@if(app()->getLocale()=='ar'){{ trans('labels.Contact Us')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.اتصل بنا')}}@endif</a>
             </li>
-			<li class="nav-item">
+			@if(app()->getLocale()=='ar')<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/en')}}">en</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/ar')}}">ar</a>
+			</li>@endif
+				@if(app()->getLocale()=='en')<li class="nav-item">
+					<a class="nav-link js-scroll-trigger" href="{{url('/Lang/ar')}}">ar</a>
+				
+				</li>@endif
 			
-			</li>
+			
 			
           </ul>
         </div>
@@ -96,19 +109,31 @@
 	
 	<section id="home" class="main-banner parallaxie" style="background: url('assets/uploads/b.jpg')">
 		<div class="heading">
-			<h1>Welcome to Mintstint</h1>			
+			<h1>@if(app()->getLocale()=='ar'){{ trans('labels.Welcome To Mintstint')}}@endif
+				@if(app()->getLocale()=='en'){{trans('labels.مرحبا في مينت ستنت')}}@endif</h1>			
 			<h3 class="cd-headline clip is-full-width">
-				<span>Get More In Less Time <br><br> Great Tools = Happy People</span>
+				<span>@if(app()->getLocale()=='ar'){{ trans('labels.Get More In Less Time')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.إنجز اكتر في وقت أقل')}}@endif <br><br> @if(app()->getLocale()=='ar'){{ trans('labels.Professional tools =happy clients and more sales')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.أدوات احترافيه = عملاء سعيده ومبيعات عديده')}}@endif</span>
 				<span class="cd-words-wrapper">
 					<b class="is-visible"></b>
-					<b>Zoom Services</b>
-					<b>CRM Services</b>
-					<b>Multi-Lingual Multi-Accent Voice Over Production</b>
-					<b>Designing and Creating Websites and E-Stores</b>
+					<b>@if(app()->getLocale()=='ar'){{ trans('labels.Zoom Services')}}@endif
+						@if(app()->getLocale()=='en'){{trans('labels.Zoom خدمات')}}@endif</b>
+					<b>@if(app()->getLocale()=='ar'){{ trans('labels.CRM Services')}}@endif
+						@if(app()->getLocale()=='en'){{trans('labels.CRM خدمات')}}@endif</b>
+					<b>@if(app()->getLocale()=='ar'){{ trans('labels.Multi-Lingual Multi-Accent Voice Over Production')}}@endif
+						@if(app()->getLocale()=='en'){{trans('labels.البث الصوتي متعدد اللغات')}}@endif</b>
+					<b>@if(app()->getLocale()=='ar'){{ trans('labels.Designing and Creating Websites and E-Stores')}}@endif
+						@if(app()->getLocale()=='en'){{trans('labels.تصميم وإنشاء المواقع والمتاجر الالكترونية')}}@endif</b>
 				</span>
 				<div class="btn-ber">
-					<a class="get_btn hvr-bounce-to-top" href="#contact">Contact Us</a>
-					<a class="learn_btn hvr-bounce-to-top" href="/home" target="_blank">Learn More</a>
+					<a class="get_btn hvr-bounce-to-top" href="#contact">@if(app()->getLocale()=='ar'){{ trans('labels.Contact Us')}}@endif
+						@if(app()->getLocale()=='en'){{trans('labels.اتصل بنا')}}@endif</a>
+						
+					<a class="learn_btn hvr-bounce-to-top" href="/home" target="_blank">
+						@if(app()->getLocale()=='ar'){{trans('labels.Know More')}}@endif
+						@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif
+					</a>
 				</div>
 			</h3>
 		</div>
@@ -119,11 +144,18 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>About Mintstint</h2>
-                        <p>Mintstint is&reg; An Egyptian Subsidiary of Mintstint LTD in the UK and represented by BDAS in Saudi Arabia. Envisaged and founded in 2020 in the eye of the COVID-19 storm, Mintstint® is an Egyptian subsidiary of Mintstint Ltd in the UK and represented by BDAS Smart in Saudi Arabia.<br> Mintstint is primarily active as a reseller partner and consultant of Zoom Unified Communications Solutions. Hence providing services of Zoom license sales, technical consulting, and customer support in the EMEA region. </p>
-						<p>Mintstint also has technical and engineering expertise in test equipment calibration services and is an affiliate of the Egyptian National Institute of Standards (NIS). Mintstint provides comprehensive industrial calibration services to its prestigious customers in Egypt through field visits and remote consulting. <br> On top of that, Mintstint can facilitate a range of digital services, including but not limited to website design optimization, technical and engineering content, email marketing, audio podcasts, and voiceover production in Arabic and foreign languages.</p>
+                        <h2>@if(app()->getLocale()=='ar'){{ trans('labels.About Mintstint')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.عن مينت ستنت')}}@endif </h2>
+                        <p>
+							@if(app()->getLocale()=='ar'){{ trans('labels.Mintstint® is an Egyptian subsidiary of Mintstint Ltd in the UK and represented by BDAS Smart in Saudi Arabia, Envisaged and founded in 2020 in the eye of the COVID-19 storm.')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels. .في السعودية BDAS Smart في المملكة المتحدة وتمثلها Mintstint Ltd مينت ستنت هي شركة تابعة لشركة')}}@endif<br>
+							@if (app()->getLocale()=='ar'){{trans('labels.Mintstint is primarily active as a reseller partner and consultant of Zoom Unified Communications Solutions. Hence providing services of Zoom license sales, technical consulting, and customer support in the EMEA region.')}}@endif @if(app()->getLocale()=='en'){{trans('labels.تعمل مينت ستنت بشكل أساسي كشريك موزع ومستشار لزوم.ومن ثم تقديم خدمات مبيعات ترخيص والاستشارات الفنية ودعم العملاء في منطقة اوروبا والشرق الاوسط وإفريقيا.')}}@endif </p>
+						<p>@if(app()->getLocale()=='ar'){{trans('labels.Mintstint also has technical and engineering expertise in test equipment calibration services and is an affiliate of the Egyptian National Institute of Standards (NIS). Mintstint provides comprehensive industrial calibration services to its prestigious customers in Egypt through field visits and remote consulting. ')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.تمتلك مينت ستنت أيضًا خبرة فنية وهندسية في خدمات معايرة معدات الشركة التابعة للمعهد القومي المصري للمعايير (NIS). تقدم خدمات معايرة صناعية شاملة لعملائها المرموقين في مصر من خلال الخدمة والاستشارات.')}}@endif <br>@if(app()->getLocale()=='ar'){{trans('labels.On top of that, Mintstint can facilitate a range of digital services, including but not limited to website design optimization, technical and engineering content, email marketing, audio podcasts, and voiceover production in Arabic and foreign languages.')}}@endif 
+						@if(app()->getLocale()=='en'){{trans('labels.علاوة على ذلك ، يمكننا تسهيل مجموعة من الخدمات الرقمية ، بما في ذلك على سبيل المثال لا الحصر تحسين تصميم مواقع الويب ، والمحتوى التقني والهندسي ، والتسويق عبر البريد الإلكتروني ، والبودكاست الصوتي ، وإنتاج التعليقات الصوتية باللغات العربية والأجنبية.')}}@endif</p>
 
-                        <a href="#contact" class="sim-btn hvr-bounce-to-top"><span>Contact Us</span></a>
+                        <a href="#contact" class="sim-btn hvr-bounce-to-top"><span>@if(app()->getLocale()=='ar'){{ trans('labels.Contact Us')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.اتصل بنا')}}@endif</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -139,7 +171,8 @@
     <div id="services" class="section lb">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Services</h3>
+                <h3>@if(app()->getLocale()=='ar'){{ trans('labels.Services')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.الخدمات')}}@endif</h3>
                
             </div><!-- end title -->
 
@@ -150,10 +183,13 @@
 							<!-- <i class="flaticon-seo"></i> -->
 							<img src="assets/images/zoom.png" alt="zoomlogo">
 						</div>
-						<h2>Zoom Services</h2>
-						<p>Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online.		
+						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Zoom Services')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.Zoom خدمات')}}@endif</h2>
+						<p>@if(app()->getLocale()=='ar'){{trans('labels.Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online.	')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.مينت ستنت هو شريك المبيعات المعتمد لـ Zoom. خدمتنا الفريدة هي ZOOM LICENSE للتعليم والمؤسسات والمهنية. لا تقلق بشأن عملك بشأن التغييرات في فيروس كورونا وظهور طفرات الفيروس. نحن هنا لمساعدتك على الاتصال ، توفر لك مينت ستنت حلولاً تقنية لإدارة علامتك التجارية عن بُعد والحصول على الأفضل بسعر أقل من الإنترنت. للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد. احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز.')}}@endif 	
 						</p>
-						<a class="sim-btn hvr-bounce-to-top" href="/zoom" target="_blank">Know More...</a>
+						<a class="sim-btn hvr-bounce-to-top" href="/zoom" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 						
 					</div>
                 </div><!-- end col -->
@@ -163,9 +199,12 @@
 							<!-- <i class="flaticon-development"></i> -->
 							<img src="assets/images/crm.jpg" alt="CRM">
 						</div><br>
-						<h2>Cloud Customer Relationship Management (CRM)</h2>
-						<p>The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.</p>
-						<a class="sim-btn hvr-bounce-to-top" href="/crm" target="_blank">Know More...</a>
+						<h2>@if(app()->getLocale()=='ar'){{trans('labels.Cloud Customer Relationship Management (CRM)')}}@endif 
+						@if(app()->getLocale()=='en'){{trans('labels.نظام إدارة علاقات العملاء')}}@endif</h2>
+						<p>@if(app()->getLocale()=='ar'){{trans('labels.The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.')}}@endif 
+						@if(app()->getLocale()=='en'){{trans('labels.أداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها. نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه.')}}@endif</p>
+						<a class="sim-btn hvr-bounce-to-top" href="/crm" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 					</div>
                 </div><!-- end col -->
 				<div class="col-md-3">
@@ -174,9 +213,12 @@
 							<!-- <i class="flaticon-process"></i> -->
 							<img src="assets/images/Voice-Over-Demo.jpg" alt="VoiceOver"><br>
 						</div><br>
-						<h2>Multi-Lingual Multi-Accent Voice Over Production</h2>
-						<p>Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos. MintStint offers motion-based advertising video maker service. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.</p>
-						<a class="sim-btn hvr-bounce-to-top" href="/voiceover" target="_blank">Know More...</a>
+						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Multi-Lingual Multi-Accent Voice Over Production')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.البث الصوتي متعدد اللغات')}}@endif</h2>
+						<p>@if(app()->getLocale()=='ar'){{trans('labels.Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos. MintStint offers motion-based advertising video maker service. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.تخير الأفضل ضمن نخبة من أفضل الأصوات العربية والخليجية والاجنبية للاستخدام في الرسالة الصوتية IVR او للاستخدام في مقاطع الفيديو الدعائية.تقدم منت ستنت خدمة صناعة مقاطع فيديو دعائية معتمدة على الحركة تشمل: كتابة النص ،تسجيل صوتي بكل اللهجات واللغات المختلفة وبأصوات تتلاءم مع طبيعة المنتج أو الخدمة، هندسة صوتية لإخراج الإعلان بطريقة إبداعية، لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة.')}}@endif</p>
+						<a class="sim-btn hvr-bounce-to-top" href="/voiceover" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 					</div>
                 </div><!-- end col -->
 				<div class="col-md-3">
@@ -185,9 +227,12 @@
 							<!-- <i class="flaticon-discuss-issue"></i> -->
 							<img src="assets/images/design.png" alt="design">
 						</div>
-						<h2>Designing and Creating Websites and E-Stores</h2>
-						<p>It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers.</p>
-						<a class="sim-btn hvr-bounce-to-top" href="/design" target="_blank">Know More...</a>
+						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Designing and Creating Websites and E-Stores')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.تصميم وإنشاء المواقع والمتاجر الالكترونية')}}@endif</h2>
+						<p>@if(app()->getLocale()=='ar'){{trans('labels.It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers.')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.لقد أصبح الآن من الضرورى ان تمتلك تصميم موقع انترنت جذاب وذكى وأيضا لوحة تحكم كاملة للتحكم وإدارة جميع محتويات الموقع من صور ونصوص وفيديوهات وغيرها من محتويات موقع الانترنت، حيث ان موقع الانترنت يلعب دورا هاما وأساسيا فى تقديم السياسات والخدمات والمنتجات المقدمة من قبل الشركة للعملاء.لدينا من الخبرات ما يجعلنا من أفضل شركات تصميم مواقع الانترنت بتقديم خدماتنا لعدد ضخم من عملائنا وذلك ناتج من كسب ثقة عملائنا فى اداء أعمالنا بافضل الطرق وأفضل التقنيات.')}}@endif</p>
+						<a class="sim-btn hvr-bounce-to-top" href="/design" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
+							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 					</div>
                 </div>
 				
@@ -199,7 +244,8 @@
 	<div id="portfolio" class="section lb">
 		<div class="container">
 			<div class="section-title text-center">
-                <h3>Our Partners</h3>
+                <h3>@if(app()->getLocale()=='ar'){{ trans('labels.Our Partners')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.شركائنا')}}@endif</h3>
                 
             </div><!-- end title -->
 <!-- 			
@@ -277,7 +323,8 @@
 	<div id="blog" class="section lb">
 		<div class="container">
 			<div class="section-title text-center">
-                <h3>Blog</h3>
+                <h3>@if(app()->getLocale()=='ar'){{ trans('labels.Blog')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.المدونة')}}@endif</h3>
                 <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
             </div><!-- end title -->
 			
@@ -350,7 +397,8 @@
 	<div id="team" class="section wb">
 		<div class="container">
 			<div class="section-title text-center">
-				<h3>Our Vendors</h3>
+				<h3>@if(app()->getLocale()=='ar'){{ trans('labels.Our Vendors')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.موردينا')}}@endif</h3>
 			</div><!-- end title -->
 		
 			<div class="row">
@@ -459,7 +507,7 @@
 	</div>
 	<!-- FAQ Section -->
 	
-	<div id="pricing" class="section lb">
+	{{-- <div id="pricing" class="section lb">
 		<div class="container">
 			<div class="section-title text-center">
                 <!-- <h3>Pricing</h3> -->
@@ -470,13 +518,14 @@
             </div>
 			
 		</div>
-	</div>
+	</div> --}}
 	<!-- FAQ End -->
 
     <div id="contact" class="section db">
         <div class="container">
             <div class="section-title text-center">
-                <h3>Contact Us</h3>
+                <h3>@if(app()->getLocale()=='ar'){{ trans('labels.Contact Us')}}@endif
+					@if(app()->getLocale()=='en'){{trans('labels.اتصل بنا')}}@endif</h3>
                 
             </div><!-- end title -->
 

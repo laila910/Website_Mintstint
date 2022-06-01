@@ -59,7 +59,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">Return To Home</a>
+              <a class="nav-link js-scroll-trigger" href="/"> @if(session('lang')=='ar'){{trans('labels.Home')}}@endif
+				@if(session('lang')=='en'){{trans('labels.الصفحة الرئيسية')}}@endif</a>
             </li>
           </ul>
         </div>
@@ -68,11 +69,14 @@
 	
 	<section id="home" class="main-banner parallaxie" style="background: url('assets/uploads/b.jpg')">
 		<div class="heading">
-			<h1>Cloud Customer Relationship Management (CRM)</h1>			
+			<h1>@if(session('lang')=='ar'){{trans('labels.Cloud Customer Relationship Management (CRM)')}}@endif 
+                @if(session('lang')=='en'){{trans('labels.نظام إدارة علاقات العملاء')}}@endif</h1>			
 			<h3 class="cd-headline clip is-full-width">
-				<span>Real-time Overview.<br><br>
-                    Easily Review your performance & next activities<br><br>
-                    Track Leads, Close Opportunities and get accurate forecasts.</span>
+				<span>@if(session('lang')=='en')Real-time Overview.@endif 
+                    @if(session('lang')=='ar')كن علي اطلاع دائم باداء شركتك بأسهل الطرق من خلال انظمة السي ار ام المميزة لدينا@endif<br><br>
+                    @if(session('lang')=='en')Easily Review your performance & next activities<br><br>
+                    Track Leads, Close Opportunities and get accurate forecasts.@endif 
+                @if(session('lang')=='ar')تابع عملاؤك المحتملين وانشئ فرص جديده واحصل علي تنبؤات دقيقه @endif</span>
 			</h3>
 		</div>
 	</section>
@@ -90,9 +94,12 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="message-box">                        
-                        <h2>CRM services</h2>
-                        <p>The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.<br>Helps you to create a clear database for your customers with a full link to SMS and email:<br>
-                            1.Full support for the Arabic language<br>2.Support for all phones and tablets through Mintstint CRM App<br>3.Easy to upgrade and add new updates.<br>4.Using CRM can improve your lead records rate by 500%.<br></p>
+                        <h2>@if(session('lang')=='ar'){{ trans('labels.CRM Services')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.CRM خدمات')}}@endif</h2>
+                        <p>@if(session('lang')=='en')The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.<br>Helps you to create a clear database for your customers with a full link to SMS and email:<br>
+                            1.Full support for the Arabic language<br>2.Support for all phones and tablets through Mintstint CRM App<br>3.Easy to upgrade and add new updates.<br>4.Using CRM can improve your lead records rate by 500%.<br>@endif 
+                        @if(session('lang')=='ar')اداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها<br>نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه.يساعد فريق المبيعات علي متابعة الطلبات المختلفة واخر التحديثات الخاصة بكل عميل وحفظها للتعامل معها في الوقت الحاضر او مستقبلا مما يرفع من أداء الفريق وزيادة فرص المبيعات لمنشئتك.يسهل على جميع أفراد فريق العمل التواصل فيما يخص مراحل المشروع منذ تدشينه مروراً بمراحله المختلفة وحتى الانتهاء منه. يساعد المسئولين التنفيذيين على التعرف على كل جوانب العمل ومراحل المشاريع مما يسهل عملية التسويق وزيادة المبيعات. نظام مهم جداً لأي فريق عمل خاصة تلك الشركات التي أجبرتها ظروف الحجر الصحي على العمل من خلال شبكة الانترنت.
+                        @endif</p>
 
                        
                     </div><!-- end messagebox -->
@@ -102,43 +109,60 @@
             </div><!-- end row -->
             <div class="row">
                 <div class="message-box"> 
-                    <h3>CRM System include many systems helps you to develop your business like:</h3>
+                    <h3>@if(session('lang')=='en')CRM System include many systems helps you to develop your business like:@endif</h3>
                 </div>
             </div><br>
             <div class="row">
-                <div class="message-box"> 
+                <div class="message-box"> @if(session('lang')=='en')
                     <h4>1. Marketing System</h4><br>
                     <h5>Marketing Campaigns:</h5>
                     <p>The system allows you to create marketing campaigns following it through reports. </p>
                     <h5>Leads:</h5>
-                    <p>It can identify new and registered customers.as well as showing their data, observations or previous requests.</p>
+                    <p>It can identify new and registered customers.as well as showing their data, observations or previous requests.</p>@endif
                 </div>
             </div>
             <div class="row">
-                <div class="message-box">
+                <div class="message-box">@if(session('lang')=='en')
                     <h4>2. Sales System</h4>
-                    <p>The system allows you to add your business products and services as well as creating quotes and send them directly to customers. </p>
+                    <p>The system allows you to add your business products and services as well as creating quotes and send them directly to customers. </p>@endif
                 </div>
             </div>
             <div class="row">
-                <div class="message-box">
+                <div class="message-box">@if(session('lang')=='en')
                     <h4>3. Store System</h4>
-                    <p>Managing stored items in codes , location for easily reach as well as incoming and outcoming products according to availabilty, quantities and vendors to facilate inventory It adds more to your wharehouse work as you can easily add products , services and send purchase orders to your clients.</p>
+                    <p>Managing stored items in codes , location for easily reach as well as incoming and outcoming products according to availabilty, quantities and vendors to facilate inventory It adds more to your wharehouse work as you can easily add products , services and send purchase orders to your clients.</p>@endif
                 </div>
 
             </div>
             <div class="row">
-                <div class="message-box">
+                <div class="message-box">@if(session('lang')=='en')
                     <h4>4. Support System</h4>
-                    <p>Support cards are linked directly to contacts; here customer complaints and suggestions are saved for easy handling ; you can easily create support ticket cards or the system do it automaticlly , notify your customer with a SMS with your senderID. </p>
+                    <p>Support cards are linked directly to contacts; here customer complaints and suggestions are saved for easy handling ; you can easily create support ticket cards or the system do it automaticlly , notify your customer with a SMS with your senderID. </p>@endif
                 </div>
 
             </div>
             <div class="row">
-                <div class="message-box">
+                <div class="message-box">@if(session('lang')=='en')
                     <h4>5. Short Message Service SMS</h4>
-                    <P>By Using Short Message Service SMS you can send notifying SMS and track tickets with your own Sender ID. </P>
+                    <P>By Using Short Message Service SMS you can send notifying SMS and track tickets with your own Sender ID. </P>@endif
                 </div>
+            </div>
+            <div class="row">
+                <div class="message-box">@if(session('lang')=='ar')
+                    <h2>مميزات العمل باستخدام نظام إدارة علاقات العملاء</h2>
+                    <p><ul>
+                        <li>• تحسين أداء أقسام خدمة العملاء، والتسويق، والمبيعات داخل الشركة.
+                        </li>
+                        <li>• المساعدة في إطلاق حملات تسويقية ناجحة من خلال ما يتم جمعه من بيانات عن العملاء.
+                        </li>
+                        <li>• التواصل بشكل أفضل مع العميل وبالتالي معرفة رغباته واحتياجاته وأنماط الشراء لديه.
+                        </li>
+                        <li>• الترابط بين الإدارات المختلفة داخل الشركة الواحدة مما يسهل مسار العمل ويساعد في تحسين أداء الشركة بوجه عام.
+                        </li>
+                        
+                    </ul></p>@endif
+                </div>
+
             </div>
 
             
@@ -146,7 +170,7 @@
      
         
     </div><!-- end section -->
-    <div id="services" class="section lb">
+    <div id="services" class="section lb">@if(session('lang')=='en')
 
     <div class="container">
         <div class="section-title text-center">
@@ -337,8 +361,215 @@
             </div>
         </div>
 
+    </div>@endif
     </div>
-    </div>
+    <div id="services" class="section lb">@if(session('lang')=='ar')
+
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>الادوات الخاصة بنظام ادارة علاقات العملاء</h3>
+               
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                        </div>
+                        <h2>إخفاء وإظهار الحقول</h2>
+                        <p>تمــكنك هــذه الخــاصيه من اخفاء بعض الحقول واظهارها
+                            بنـــاء على اخـــتيارات معينه فمثلا لو كان لديك مـــجموعه
+                            حقول يتم تعبئتها في حال كان طلب العميل هو شكوى
+                            فـــان جــميع الــحقول الــغير مــتعلقه بالشكوى ستختفي
+                            تــلقائيا مــما يــسهل علــى فــريق الــعمل الــتعامل مـــع
+                            الطلبات بشكل اسرع.</p>
+    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-briefcase" aria-hidden="true"></i>
+                        </div>
+                        <h2>نظام البريد الإلكتروني الداخلي</h2>
+                        <p>وهو نظام بريد الكتروني يغنيك عن جميع البرامج الاخرى مثل
+                            اوتلــوك فمن خلاله تستطــيع ارسال واستقبال الايميلات حفظ
+                            بيـــانات العــــميل بشـــكل مــباشر على النظام والعــــديد من
+                            المميزات الاخرى.</p><br><br>
+    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-book" aria-hidden="true"></i>
+                        </div>
+                        <h2>التقارير</h2>
+                        <p>يمكنك انشاء عدد لا نهائي من التقارير بطريقه سهله جدا مع
+                            امــكانيه ربط الــتقارير وانشــائها تلــقائيا كــل 24 ســاعه مـــثلآ</p>
+    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-envelope" aria-hidden="true"></i>
+                        </div>
+                        <h2>نماذج البريد الإلكتروني</h2>
+                        <p>يمكن يمكنك إنشاء نماذج جاهزه للايميلات تسهل على
+                            فريق العمل عمليه التواصل مع العملاء و حتى مع الاداره.</p>
+    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-cogs" aria-hidden="true"></i>
+                        </div>
+                        <h2>التحكم الكامل بالصلاحيات</h2>
+                        <p>يحتوي النظام على قسم كامل خاص بالمستخدمين
+                            والمجموعات والصلاحيات من خلالها يمكنك انشاء
+                            صلاحيات معينه لفريق العمل ويمكنك التحكم باصغر
+                            الــتفاصيل حتى بمـا يتعلق بالــحقل لــنفسه من ناحـيه
+                            امكانيه تعديل حقول معينه او مشاهده حقول معينه
+                            فقط وهكذا.</p>
+    
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-file-text" aria-hidden="true"></i>
+                        </div>
+                        <h2>نماذج الويب</h2>
+                        <p>يتيح لك فتح قناه تواصل بخري من خلال الموقع الالكترونى
+                            و هــي عباره عن نماذج يتــم تصميمها على النظام ثم يتم
+                            وضعها على اي موقع او اي رابط ترغب بها بحيث عند تعبئه
+                            هذا النموذج سيتم نقل بيانات النموذج الى النظام مباشره.</p><br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-filter" aria-hidden="true"></i>
+                        </div>
+                        <h2>خاصية الفلترة</h2>
+                        <p>تـتيح هذه الخاصيه امـكانيه تقسيم العملاء او تقسيم
+                            تذاكـر الدعم لعده فئات فمثلا جميع التذاكر المفتوحه
+                            يتم اضافتها فى فلتر والتذاكر المغلقه تتم اضـــافتها
+                            فى فلتر اخر مما يسهل عمليه البحث</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-comments-o" aria-hidden="true"></i>
+                        </div>
+                        <h2>الربط مع الرسائل النصية القصيرة
+                        </h2>
+                        <p> امكانيه ارسال رسائل قصيره سواء بشكل تلقائي او يدوي.
+
+                        </p><br><br><br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-user" aria-hidden="true"></i>
+                        </div>
+                        <h2>جهات الاتصال</h2>
+                        <p>ومــن خـــلاله يتم حفظ وتعبئه بـــيانات العملاء من اسماء و ارقام
+                            و هواتف و اي معلومات اخرى.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-tachometer" aria-hidden="true"></i>
+                        </div>
+                        <h2>لوحة المعلومات
+                        </h2>
+                        <p>عباره عن شاشه مقسمه تعرض لك احدث العملاء والطلبات
+                            وغيرها مع امكانيه تحديد ما ترغب ان يتم عرض بها.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-ticket" aria-hidden="true"></i>
+                        </div>
+                        <h2>تذاكر الدعم الفني</h2>
+                        <p>وبه يتم حفظ طلبات العملاء من شكاوى واقتراحات و اي طلبات
+                            اخرى وتكون مرتبطه مباشره بجهات الاتصال.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                        </div>
+                        <h2>التقويم</h2>
+                        <p>جدول الاجتماعات و قائمه المهام مع امكانيه التذكير بموعد ما
+                            عن طريق رسائل نصيه او ايميلات.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-file" aria-hidden="true"></i>
+                        </div>
+                        <h2>المستندات</h2>
+                        <p>تخزين جميع الملفات التي يتم رفعها على النظام مع امكانيه
+                            تقسيمها وإدارتها بسهوله.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-recycle" aria-hidden="true"></i>
+                        </div>
+                        <h2>سلة المحذوفات</h2>
+                        <p>تـخزين الملفات المحذوفه من النظام ولا يستطيع احد ان
+                            يحــذفها نهائيا من النظام لا من يملك الصلاحيات لذلك.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-info-circle" aria-hidden="true"></i>
+                        </div>
+                        <h2>بنك المعلومات</h2>
+                        <p>ويتم من خلاله انشاء نظام الأسئلة الشائعة الخاص بك مما
+                            يسهل على الموظفين وفريق العمل وحتى المستجد منهم
+                            معرفه جميع ما يتعلق ب كيفيه التعامل مع طلبات العملاء.</p><br>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-signal" aria-hidden="true"></i>
+                        </div>
+                        <h2>الورك فلو
+                        </h2>
+                        <p>من خلاله يتم انشاء جميع العمليات التلقائية التي لا تحتاج
+                            الى تدخل بشرى مثل ارسال الرسائل النصية القصيرة
+                            والايميلات ومتابعه الطلبات والتذكير بها وغيره الكثير.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="services-inner-box">
+                        <div class="ser-icon">
+                            <i class="fa fa-envelope-o" aria-hidden="true"></i>
+                        </div>
+                        <h2>الربط مع البريد الالكتروني</h2>
+                        <p>يمكنك من ارسال عدد لا نهائي من الايميلات لجميع العملاء
+                            وحتى تداولها بين فريق العمل.</p>
+                    </div>
+                </div>
+            </div>
+    
+        </div>@endif
+        </div>
 
 
 

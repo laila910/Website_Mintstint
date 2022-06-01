@@ -59,7 +59,8 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#home">Return To Home</a>
+              <a class="nav-link js-scroll-trigger" href="/">  @if(session('lang')=='ar'){{trans('labels.Home')}}@endif
+				@if(session('lang')=='en'){{trans('labels.الصفحة الرئيسية')}}@endif</a></a>
             </li>
           </ul>
         </div>
@@ -68,7 +69,8 @@
 	
 	<section id="home" class="main-banner parallaxie" style="background: url('assets/uploads/b.jpg')">
 		<div class="heading">
-			<h1>Multi-Lingual Voice Recording</h1>			
+			<h1>@if(session('lang')=='ar'){{ trans('labels.Multi-Lingual Multi-Accent Voice Over Production')}}@endif
+                @if(session('lang')=='en'){{trans('labels.البث الصوتي متعدد اللغات')}}@endif</h1>			
 			<h3 class="cd-headline clip is-full-width">
 				
 			</h3>
@@ -88,8 +90,10 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="message-box">                        
-                        <h2>Multi-Lingual Voice Recording</h2>
-                        <p>Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos.<br> MintStint offers motion-based advertising video maker service that includes:<br>1. Write text.<br>2. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.<br>3. Sound engineering for creative advertising.<br>4. Creative clips for advertising based on motion design software.</p>
+                        <h2>@if(session('lang')=='ar'){{ trans('labels.Multi-Lingual Multi-Accent Voice Over Production')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.البث الصوتي متعدد اللغات')}}@endif</h2>
+                        <p>@if(session('lang')=='ar'){{trans('labels.Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos. MintStint offers motion-based advertising video maker service. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.')}}@endif
+							@if(session('lang')=='en'){{trans('labels.تخير الأفضل ضمن نخبة من أفضل الأصوات العربية والخليجية والاجنبية للاستخدام في الرسالة الصوتية IVR او للاستخدام في مقاطع الفيديو الدعائية.تقدم منت ستنت خدمة صناعة مقاطع فيديو دعائية معتمدة على الحركة تشمل: كتابة النص ،تسجيل صوتي بكل اللهجات واللغات المختلفة وبأصوات تتلاءم مع طبيعة المنتج أو الخدمة، هندسة صوتية لإخراج الإعلان بطريقة إبداعية، لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة.')}}@endif <br>@if(session('lang')=='ar'){{trans('labels.Sound engineering for creative advertising')}}@endif @if(session('lang')=='en'){{trans('labels.هندسة صوتية لإخراج الإعلان بطريقة إبداعية')}}@endif <br>@if(session('lang')=='ar'){{trans('labels.Sound engineering for creative advertising')}}@endif @if(session('lang')=='en'){{trans('labels.لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة')}}@endif @if(session('lang')=='ar'){{trans('labels.Creative clips for advertising based on motion design software')}}@endif</p>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 

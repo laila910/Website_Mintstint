@@ -75,21 +75,28 @@
           <i class="fa fa-bars"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav text-uppercase ml-auto">
+          <ul class="navbar-nav  ml-auto">
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger active" href="#zoom">Zoom</a>
+                <a class="nav-link js-scroll-trigger active" href="#zoom">
+                    @if(session('lang')=='ar'){{trans('labels.Zoom')}}@endif 
+                    @if(session('lang')=='en'){{trans('labels.زوم')}}@endif</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#crm">CRM</a>
+                <a class="nav-link js-scroll-trigger" href="#crm">@if(session('lang')=='ar'){{trans('labels.CRM')}}@endif 
+                    @if(session('lang')=='en'){{trans('labels.إدارة علاقات العملاء')}}@endif</a>
               </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#voiceover">Voice Over</a>
+                <a class="nav-link js-scroll-trigger" href="#voiceover">@if(session('lang')=='ar'){{trans('labels.Voice Over')}}@endif 
+                    @if(session('lang')=='en'){{trans('labels.البث الصوتي')}}@endif </a>
               </li>
             <li class="nav-item">
-                <a class="nav-link js-scroll-trigger" href="#design">websites and E-stores</a>
+                <a class="nav-link js-scroll-trigger" href="#design">
+                    @if(session('lang')=='ar'){{trans('labels.Design Websites')}}@endif 
+                    @if(session('lang')=='en'){{trans('labels.تصميم المواقع')}}@endif</a>
               </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="/">Return To Home</a>
+              <a class="nav-link js-scroll-trigger" href="/">@if(session('lang')=='ar'){{trans('labels.Home')}}@endif
+				@if(session('lang')=='en'){{trans('labels.الصفحة الرئيسية')}}@endif</a>
             </li>
           
           </ul>
@@ -99,7 +106,8 @@
 	
 	<section id="home" class="main-banner parallaxie" style="background: url('assets/uploads/b.jpg')">
 		<div class="heading">
-			<h1>Our Services</h1>			
+			<h1>@if(session('lang')=='ar'){{trans('labels.Our Services')}}@endif 
+            @if(session('lang')=='en'){{trans("labels.خدماتنا")}}@endif </h1>			
 			<h3 class="cd-headline clip is-full-width">
 			</h3>
 		</div>
@@ -110,10 +118,14 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>Zoom Services</h2>
-                        <p>Mintstint is the authorized Sales partner of Zoom. Our Unique Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus .
-                            We’re here to help you connect, Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online. communicate, and express your ideas so you can get more done together. We’re proud to be trusted by millions of enterprises, small businesses, and individuals. Get Meetings, Phone and Chat together on any device.</p>
-                        <a href="/zoom" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <h2>@if(session('lang')=='ar'){{ trans('labels.Zoom Services')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.Zoom خدمات')}}@endif</h2>
+                        <p>@if(session('lang')=='ar'){{trans('labels.Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online.	')}}@endif
+							@if(session('lang')=='en'){{trans('labels.مينت ستنت هو شريك المبيعات المعتمد لـ Zoom. خدمتنا الفريدة هي ZOOM LICENSE للتعليم والمؤسسات والمهنية. لا تقلق بشأن عملك بشأن التغييرات في فيروس كورونا وظهور طفرات الفيروس. نحن هنا لمساعدتك على الاتصال ، توفر لك مينت ستنت حلولاً تقنية لإدارة علامتك التجارية عن بُعد والحصول على الأفضل بسعر أقل من الإنترنت. للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد. احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز.')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد.')}}@endif  
+                            @if(session('lang')=='ar'){{trans('labels.communicate, and express your ideas so you can get more done together. We’re proud to be trusted by millions of enterprises, small businesses, and individuals. Get Meetings, Phone and Chat together on any device.')}}@endif</p>
+                        <a href="/zoom" class="sim-btn hvr-bounce-to-top"><span>@if(session('lang')=='ar'){{trans('labels.Know More')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.اعرف المزيد')}}@endif</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -130,18 +142,19 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>CRM Services</h2>
-                        <p>The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.</p>
-                        <p>
+                        <h2>@if(app()->getLocale()=='ar'){{ trans('labels.Services')}}@endif
+                            @if(app()->getLocale()=='en'){{trans('labels.الخدمات')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.CRM')}}@endif 
+                            @if(session('lang')=='en'){{trans('labels.إدارة علاقات العملاء')}}@endif</h2>
+                        <p>@if(session('lang')=='ar'){{trans('labels.The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.')}}@endif 
+                            @if(session('lang')=='en'){{trans('labels.أداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها. نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه.')}}@endif
+                       
+                            @if(session('lang')=='en'){{trans('labels.يسهل على جميع أفراد فريق العمل التواصل فيما يخص مراحل المشروع منذ تدشينه مروراً بمراحله المختلفة وحتى الانتهاء منه. يساعد المسئولين التنفيذيين على التعرف على كل جوانب العمل ومراحل المشاريع مما يسهل عملية التسويق وزيادة المبيعات.  نظام مهم جداً لأي فريق عمل خاصة تلك الشركات التي أجبرتها ظروف الحجر الصحي على العمل من خلال شبكة الانترنت.')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.It is easy for all members of the work team to communicate about the stages of the project from its inception through its various stages to its completion. Helps executives learn about all aspects of the business and project phases, facilitating the marketing process and increasing sales. A very important system for any work team, especially those companies that have been forced by quarantine conditions to work through the Internet.')}}@endif
 
-                            Helps you to create a clear database for your customers with a full link to SMS and email
-                            <uL>
-                           <li> Full support for the Arabic language</li>
-                           <li> Support for all phones and tablets through Mintstint CRM App</li>
-                            <li>Easy to upgrade and add new updates</li>
-                           <li> Using CRM can improve your lead records rate by 500%</li>
-                        </uL></p>
-                        <a href="/crm" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                            </p>
+                        <a href="/crm" class="sim-btn hvr-bounce-to-top"><span>@if(session('lang')=='ar'){{trans('labels.Know More')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.اعرف المزيد')}}@endif</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -158,16 +171,16 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>Multi-language voice recording</h2>
-                        <p>Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos.<br>
-
-                            MintStint offers motion-based advertising video maker service that includes:<br>
-                            
-                            Write text.<br>
-                            An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.<br>
-                            Sound engineering for creative advertising.<br>
-                            Creative clips for advertising based on motion design software.<br></p>
-                        <a href="/voiceover" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <h2>@if(session('lang')=='ar'){{ trans('labels.Multi-Lingual Multi-Accent Voice Over Production')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.البث الصوتي متعدد اللغات')}}@endif</h2>
+                        <p>@if(session('lang')=='ar'){{trans('labels.Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos. MintStint offers motion-based advertising video maker service. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.')}}@endif
+							@if(session('lang')=='en'){{trans('labels.تخير الأفضل ضمن نخبة من أفضل الأصوات العربية والخليجية والاجنبية للاستخدام في الرسالة الصوتية IVR او للاستخدام في مقاطع الفيديو الدعائية.تقدم منت ستنت خدمة صناعة مقاطع فيديو دعائية معتمدة على الحركة تشمل: كتابة النص ،تسجيل صوتي بكل اللهجات واللغات المختلفة وبأصوات تتلاءم مع طبيعة المنتج أو الخدمة، هندسة صوتية لإخراج الإعلان بطريقة إبداعية، لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة.')}}@endif <br>
+                            @if(session('lang')=='en'){{trans('labels.هندسة صوتية لإخراج الإعلان بطريقة إبداعية.')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.Sound engineering for creative advertising.')}}@endif<br>
+                            @if(session('lang')=='en'){{trans('labels.لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة.')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.Creative clips for advertising based on motion design software.')}}@endif<br></p>
+                        <a href="/voiceover" class="sim-btn hvr-bounce-to-top"><span>@if(session('lang')=='ar'){{trans('labels.Know More')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.اعرف المزيد')}}@endif</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -184,9 +197,15 @@
             <div class="row">
                 <div class="col-md-6">
                     <div class="message-box">                        
-                        <h2>Designing and creating websites and E-Stores</h2>
-                        <p>It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers. We are distinguished by providing web design and web development with the best designs and techniques, which makes your website smart, easy and attractive to your customers with a very easy control panel to control the contents of the site and professional site management, which makes your customers benefit from the work you offer through your website. We have experience, which makes us one of the best web design companies by providing our services to a large number of our customers, as a result of gaining the confidence of our customers in performing our work in the best ways and the best technologies.</p>
-                        <a href="/design" class="sim-btn hvr-bounce-to-top"><span>Know More</span></a>
+                        <h2>@if(session('lang')=='ar'){{ trans('labels.Designing and Creating Websites and E-Stores')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.تصميم وإنشاء المواقع والمتاجر الالكترونية')}}@endif</h2>
+                        <p>@if(session('lang')=='ar'){{trans('labels.It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers.')}}@endif
+							@if(session('lang')=='en'){{trans('labels.لقد أصبح الآن من الضرورى ان تمتلك تصميم موقع انترنت جذاب وذكى وأيضا لوحة تحكم كاملة للتحكم وإدارة جميع محتويات الموقع من صور ونصوص وفيديوهات وغيرها من محتويات موقع الانترنت، حيث ان موقع الانترنت يلعب دورا هاما وأساسيا فى تقديم السياسات والخدمات والمنتجات المقدمة من قبل الشركة للعملاء.لدينا من الخبرات ما يجعلنا من أفضل شركات تصميم مواقع الانترنت بتقديم خدماتنا لعدد ضخم من عملائنا وذلك ناتج من كسب ثقة عملائنا فى اداء أعمالنا بافضل الطرق وأفضل التقنيات.')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.نتميز بتقديم تصميم مواقع الويب وتطوير المواقع بأفضل التصميمات والتقنيات مما يجعل موقع الويب الخاص بك ذكيًا وسهلاً وجذابًا لعملائك بلوحة تحكم سهلة للغاية للتحكم في محتويات الموقع وإدارة احترافية للموقع مما يجعل موقعك يستفيد العملاء من العمل الذي تقدمه من خلال موقع الويب الخاص بك. لدينا خبرة تجعلنا من أفضل شركات تصميم المواقع من خلال تقديم خدماتنا لعدد كبير من عملائنا نتيجة اكتساب ثقة عملائنا في أداء عملنا بأفضل الطرق وأفضل التقنيات.')}}@endif
+                            @if(session('lang')=='ar'){{trans('labels.We are distinguished by providing web design and web development with the best designs and techniques, which makes your website smart, easy and attractive to your customers with a very easy control panel to control the contents of the site and professional site management, which makes your customers benefit from the work you offer through your website. We have experience, which makes us one of the best web design companies by providing our services to a large number of our customers, as a result of gaining the confidence of our customers in performing our work in the best ways and the best technologies.')}}@endif
+                           </p>
+                        <a href="/design" class="sim-btn hvr-bounce-to-top"><span>@if(session('lang')=='ar'){{trans('labels.Know More')}}@endif
+                            @if(session('lang')=='en'){{trans('labels.اعرف المزيد')}}@endif</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
