@@ -185,8 +185,8 @@
 						</div>
 						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Zoom Services')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.Zoom خدمات')}}@endif</h2>
-						<p>@if(app()->getLocale()=='ar'){{trans('labels.Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online.	')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.مينت ستنت هو شريك المبيعات المعتمد لـ Zoom. خدمتنا الفريدة هي ZOOM LICENSE للتعليم والمؤسسات والمهنية. لا تقلق بشأن عملك بشأن التغييرات في فيروس كورونا وظهور طفرات الفيروس. نحن هنا لمساعدتك على الاتصال ، توفر لك مينت ستنت حلولاً تقنية لإدارة علامتك التجارية عن بُعد والحصول على الأفضل بسعر أقل من الإنترنت. للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد. احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز.')}}@endif 	
+						<p>@if(app()->getLocale()=='en')Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online.@endif
+							@if(app()->getLocale()=='ar')مينت ستنت هو شريك المبيعات المعتمد لـ زوم. خدمتنا الفريدة هي ZOOM LICENSE للتعليم والمؤسسات والمهنية. لا تقلق بشأن عملك بشأن التغييرات في فيروس كورونا وظهور طفرات الفيروس. نحن هنا لمساعدتك على الاتصال ، توفر لك مينت ستنت حلولاً تقنية لإدارة علامتك التجارية عن بُعد والحصول على الأفضل بسعر أقل من الإنترنت. للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد. احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز@endif 	
 						</p>
 						<a class="sim-btn hvr-bounce-to-top" href="/zoom" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
@@ -325,70 +325,225 @@
 			<div class="section-title text-center">
                 <h3>@if(app()->getLocale()=='ar'){{ trans('labels.Blog')}}@endif
 					@if(app()->getLocale()=='en'){{trans('labels.المدونة')}}@endif</h3>
-                <p>Quisque eget nisl id nulla sagittis auctor quis id. Aliquam quis vehicula enim, non aliquam risus.</p>
+               
             </div><!-- end title -->
 			
 			<div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
+				<div class="col-md-4 col-sm-6 col-lg-4">@if(session('lang')=='en') <div class="post-box"> @endif
+					@if(session('lang')=='ar')<div class="post-box text-right">@endif
+						@if(session('lang')=='ar')
 						<div class="post-thumb">
-							<img src="assets/uploads/blog-01.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span>
+							<br>
+							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">Video Conference <br>اعتمد تقنية مؤتمرات الفيديو في اعمالك</h2>
+							<h3 style="font-weight:bolder; color:black; text-align:center;">واستمتع باتصالات صوتية و مرئية احترافية من <br>خلال اجهزة الفيديو كونفرنس لدي 
+								</h3>
+						<img src="assets/uploads/videoC.jpeg" class="img-fluid" alt="post-img" />
+							<div class="date text-right">
+								<span>01</span>
+								<span>June</span>
+								<span>2022</span>
 							</div>
 						</div>
-						<div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-							<ul>
+						<div class="post-info text-right">
+							<h2 style="font-weight: bold;">
+								</h2>
+							{{-- <ul>
                                 <li>by admin</li>
-                                <li>Apr 21, 2018</li>
+                                <li>Apr 06, 2022</li>
                                 <li><a href="#"><b> Comments</b></a></li>
-                            </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            </ul> 
+							--}}
+
+							<h3 style="font-weight: bold; "><li> كاميرات عالية الجودة مدعومة بالذكاء الاصطناعي</li>
+							<li>اجتماعات صوت وصورة بشكل مبسط</li>
+						    <li> USB امكانية التوصيل والتشغيل عبر</li>
+						<li>نظام متوافق مع منصات مؤتمرات الفيديو السائدة </li></h3>
 						</div>
-					</div>
-				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
+						@endif
+						@if(session('lang')=='en')
 						<div class="post-thumb">
-							<img src="assets/uploads/blog-02.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span>
+							<br>
+							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">Video Conference <br>Adopt video conferencing <br>technology in your business</h3>
+							<h6 style="font-weight:bolder; color:black; text-align:center;">Enjoy professional audio and video communications through video conferencing devices
+								</h6>
+						<img src="assets/uploads/videoC.jpeg" class="img-fluid" alt="post-img" />
+						
+							<div class="date text-right">
+								<span>01</span>
+								<span>June</span>
+								<span>2022</span>
 							</div>
 						</div>
-						<div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-							<ul>
+						<div class="post-info text-right">
+							<h2 style="font-weight: bold;">
+								</h2>
+							{{-- <ul>
                                 <li>by admin</li>
-                                <li>Apr 21, 2018</li>
+                                <li>Apr 06, 2022</li>
                                 <li><a href="#"><b> Comments</b></a></li>
-                            </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            </ul> 
+							--}}
+
+							<h3 style="font-weight:500; text-align:left; color:black; "><br> <br><li>High quality cameras powered by artificial intelligence.</li>
+							<li>Simplified video and audio meetings.</li>
+						    <li>Plug-and-play capability via USB.</li>
+						<li>Compatible with mainstream video conferencing platforms.</li></h3>
 						</div>
+						@endif
+
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">
-					<div class="post-box">
+				<div class="col-md-4 col-sm-6 col-lg-4">@if(session('lang')=='en') <div class="post-box"> @endif
+					@if(session('lang')=='ar')<div class="post-box text-right">@endif
+						@if(session('lang')=='ar')
 						<div class="post-thumb">
-							<img src="assets/uploads/blog-03.jpg" class="img-fluid" alt="post-img" />
-							<div class="date">
-								<span>06</span>
-								<span>Aug</span>
+							<br>
+							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">CRM <br>عندك مؤسسة او شركة او مصنع</h2>
+							<h3 style="font-weight:bolder; color:black; text-align:center;">يبقي انت محتاج نظام ادارة علاقات  <br> العملاء هيساعدك في ادارة اعمالك لدي
+								</h3>
+							{{-- <h2 style="text-align:center; color:#57AE77; font-weight:500;">Mintstint</h2>
+							<h3 style="text-align:center; color:#BB4F4F; font-weight:bold;">اطلب الاستشارة الان</h3> --}}
+							<img src="assets/uploads/crm2.jpeg" class="img-fluid" alt="post-img" />
+						<img src="assets/uploads/crmpost.jpg" class="img-fluid" alt="post-img" />
+						<br>
+						<br>
+							<div class="date text-right">
+								<span>01</span>
+								<span>June</span>
+								<span>2022</span>
 							</div>
 						</div>
-						<div class="post-info">
-							<h4>Quisque auctor lectus interdum nisl accumsan venenatis.</h4>
-							<ul>
+						<div class="post-info text-right">
+							
+							{{-- <ul>
                                 <li>by admin</li>
-                                <li>Apr 21, 2018</li>
+                                <li>Apr 06, 2022</li>
                                 <li><a href="#"><b> Comments</b></a></li>
-                            </ul>
-							<p>Etiam materials ut mollis tellus, vel posuere nulla. Etiam sit amet massa sodales aliquam at eget quam. Integer ultricies et magna quis.</p>
+                            </ul> 
+							--}}
+                             
+							<h3 style="font-weight: bold; text-align:right; ">
+								
+								<li>هتابع وتقيم فريق المبيعات لديك</li>
+							<li>هتعرف مصادر عملاؤك </li>
+						    <li>هتقدر تتابع العملاء والتاريخ الكامل لعملائك</li>
+							<li>هتقدر تضيف اكتر من منتج او خدمة</li>
+						<li>هتقدر تعرف المناطق المستهلكه للخدمه الي بتقدمها</li>
+					</h3>
 						</div>
+						@endif
+						@if(session('lang')=='en')
+						<div class="post-thumb">
+							<br>
+							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">CRM<br>Do you have an organization, <br>company or factory?</h3>
+							<h6 style="font-weight:bolder; color:black; text-align:center;">Enjoy professional audio and video communications through video conferencing devices
+								</h6>
+								<img src="assets/uploads/crm2.jpeg" class="img-fluid" alt="post-img" />
+						<img src="assets/uploads/crmpost.jpg" class="img-fluid" alt="post-img" />
+						<br> <br> 
+							<div class="date text-right">
+								<span>01</span>
+								<span>June</span>
+								<span>2022</span>
+							</div>
+						</div>
+						<div class="post-info text-right">
+							<h2 style="font-weight: bold;">
+								</h2>
+							{{-- <ul>
+                                <li>by admin</li>
+                                <li>Apr 06, 2022</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul> 
+							--}}
+
+							<h3 style="font-weight:500;text-align:left; color:black; ">
+								<li>Follow and evaluate your sales team.</li>
+							<li>Get to know your customers' sources.</li>
+						    <li>track clients and the complete history of your clients.</li>
+						<li>add more than one product or service.</li>
+					<li>Know the consumer areas of the service you provide.</li></h3>
+						</div>
+						@endif
+
 					</div>
 				</div>
+				<div class="col-md-4 col-sm-6 col-lg-4">@if(session('lang')=='en') <div class="post-box"> @endif
+					@if(session('lang')=='ar')<div class="post-box text-right">@endif
+						@if(session('lang')=='ar')
+						<div class="post-thumb">
+							<br>
+							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">CRM <br>عندك مؤسسة او شركة او مصنع</h2>
+							<h3 style="font-weight:bolder; color:black; text-align:center;">يبقي انت محتاج نظام ادارة علاقات  <br> العملاء هيساعدك في ادارة اعمالك لدي
+								</h3>
+							{{-- <h2 style="text-align:center; color:#57AE77; font-weight:500;">Mintstint</h2>
+							<h3 style="text-align:center; color:#BB4F4F; font-weight:bold;">اطلب الاستشارة الان</h3> --}}
+							<img src="assets/uploads/crm2.jpeg" class="img-fluid" alt="post-img" />
+						<img src="assets/uploads/crmpost.jpg" class="img-fluid" alt="post-img" />
+						<br>
+					
+							<div class="date text-right">
+								<span>01</span>
+								<span>June</span>
+								<span>2022</span>
+							</div>
+						</div>
+						<div class="post-info text-right">
+							
+							{{-- <ul>
+                                <li>by admin</li>
+                                <li>Apr 06, 2022</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul> 
+							--}}
+                             
+							<h3 style="font-weight:bold; text-align:right; ">
+								
+							<li>انشاء تنبيهات للموظفين عن اي متطلبات اوتعديلات يجب تنفيذها</li>
+							<li>اضافة اهداف الفريق من عدد المكالمات والزيارات </li>
+						    <li>اجمالي المبيعات السنوية والشهرية</li>
+							<li>مراقبه ومتابعه الحملات الاعلانية</li>
+						<li>تقارير شامله عن الموظفين والاعلانات والعملاء</li>
+					</h3>
+						</div>
+						@endif
+						@if(session('lang')=='en')
+						<div class="post-thumb">
+							<br>
+							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">CRM<br>Do you have an organization, <br>company or factory?</h3>
+							<h6 style="font-weight:bolder; color:black; text-align:center;">Enjoy professional audio and video communications through video conferencing devices
+								</h6>
+								<img src="assets/uploads/crm2.jpeg" class="img-fluid" alt="post-img" />
+						<img src="assets/uploads/crmpost.jpg" class="img-fluid" alt="post-img" />
+						
+							<div class="date text-right">
+								<span>01</span>
+								<span>June</span>
+								<span>2022</span>
+							</div>
+						</div>
+						<div class="post-info text-right">
+							
+							{{-- <ul>
+                                <li>by admin</li>
+                                <li>Apr 06, 2022</li>
+                                <li><a href="#"><b> Comments</b></a></li>
+                            </ul> 
+							--}}
+
+							<h3 style="font-weight:500;text-align:left; color:black; ">
+								<li>Create alerts to employees about any requirements or modifications that must be implemented.</li>
+							<li>Add team goals from the number of calls and visits.</li>
+						    <li>Total annual and monthly sales.</li>
+						<li>Monitor and follow up advertising campaigns.</li>
+					<li>Comprehensive reports on employees, advertisements and customers.</li></h3>
+						</div>
+						@endif
+
+					</div>
+				</div>
+			
+			
 			</div>
 			
 		</div>

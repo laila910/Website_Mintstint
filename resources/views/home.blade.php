@@ -98,6 +98,13 @@
               <a class="nav-link js-scroll-trigger" href="/">@if(session('lang')=='ar'){{trans('labels.Home')}}@endif
 				@if(session('lang')=='en'){{trans('labels.الصفحة الرئيسية')}}@endif</a>
             </li>
+            @if(session('lang')=='ar')<li class="nav-item">
+				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/en')}}">en</a>
+			</li>
+              @if(session('lang')=='en')<li class="nav-item">
+                <a class="nav-link js-scroll-trigger" href="{{url('/Lang/ar')}}">ar</a>
+            
+            </li>@endif
           
           </ul>
         </div>
