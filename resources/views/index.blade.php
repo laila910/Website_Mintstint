@@ -74,7 +74,7 @@
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#portfolio">@if(app()->getLocale()=='ar'){{ trans('labels.Our Partners')}}@endif
-				@if(app()->getLocale()=='en'){{trans('labels.شركائنا')}}@endif</a>
+				@if(app()->getLocale()=='en'){{trans('labels.شركاء النجاح')}}@endif</a>
             </li>
 			<li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#blog">@if(app()->getLocale()=='ar'){{ trans('labels.Blog')}}@endif
@@ -142,19 +142,23 @@
     <div id="about" class="section wb">
         <div class="container">
             <div class="row">
-                <div class="col-md-6">
-                    <div class="message-box">                        
-                        <h2>@if(app()->getLocale()=='ar'){{ trans('labels.About Mintstint')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.عن مينت ستنت')}}@endif </h2>
-                        <p>
-							@if(app()->getLocale()=='ar'){{ trans('labels.Mintstint® is an Egyptian subsidiary of Mintstint Ltd in the UK and represented by BDAS Smart in Saudi Arabia, Envisaged and founded in 2020 in the eye of the COVID-19 storm.')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels. .في السعودية BDAS Smart في المملكة المتحدة وتمثلها Mintstint Ltd مينت ستنت هي شركة تابعة لشركة')}}@endif<br>
-							@if (app()->getLocale()=='ar'){{trans('labels.Mintstint is primarily active as a reseller partner and consultant of Zoom Unified Communications Solutions. Hence providing services of Zoom license sales, technical consulting, and customer support in the EMEA region.')}}@endif @if(app()->getLocale()=='en'){{trans('labels.تعمل مينت ستنت بشكل أساسي كشريك موزع ومستشار لزوم.ومن ثم تقديم خدمات مبيعات ترخيص والاستشارات الفنية ودعم العملاء في منطقة اوروبا والشرق الاوسط وإفريقيا.')}}@endif </p>
-						<p>@if(app()->getLocale()=='ar'){{trans('labels.Mintstint also has technical and engineering expertise in test equipment calibration services and is an affiliate of the Egyptian National Institute of Standards (NIS). Mintstint provides comprehensive industrial calibration services to its prestigious customers in Egypt through field visits and remote consulting. ')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.تمتلك مينت ستنت أيضًا خبرة فنية وهندسية في خدمات معايرة معدات الشركة التابعة للمعهد القومي المصري للمعايير (NIS). تقدم خدمات معايرة صناعية شاملة لعملائها المرموقين في مصر من خلال الخدمة والاستشارات.')}}@endif <br>@if(app()->getLocale()=='ar'){{trans('labels.On top of that, Mintstint can facilitate a range of digital services, including but not limited to website design optimization, technical and engineering content, email marketing, audio podcasts, and voiceover production in Arabic and foreign languages.')}}@endif 
-						@if(app()->getLocale()=='en'){{trans('labels.علاوة على ذلك ، يمكننا تسهيل مجموعة من الخدمات الرقمية ، بما في ذلك على سبيل المثال لا الحصر تحسين تصميم مواقع الويب ، والمحتوى التقني والهندسي ، والتسويق عبر البريد الإلكتروني ، والبودكاست الصوتي ، وإنتاج التعليقات الصوتية باللغات العربية والأجنبية.')}}@endif</p>
+                <div class="col-md-6">@if(app()->getLocale()=='en') <div class="message-box"> @endif
+					@if(app()->getLocale()=='ar') <div class="message-box text-right">   @endif
+						@if(app()->getLocale()=='en')
+						<h2>About Mintstint</h2> 
+						<p>Mintstint® is an Egyptian subsidiary of Mintstint Ltd in the UK and represented by BDAS Smart in Saudi Arabia, Envisaged and founded in 2020 in the eye of the COVID-19 storm. Mintstint is primarily active as a reseller partner and consultant of Zoom Unified Communications Solutions. Hence providing services of Zoom license sales, technical consulting, and customer support in the EMEA region. <br> Mintstint also has technical and engineering expertise in test equipment calibration services and is an affiliate of the Egyptian National Institute of Standards (NIS). Mintstint provides comprehensive industrial calibration services to its prestigious customers in Egypt through field visits and remote consulting. On top of that, Mintstint can facilitate a range of digital services, including but not limited to website design optimization, technical and engineering content, email marketing, audio podcasts, and voiceover production in Arabic and foreign languages. </p> @endif 
+						@if(app()->getLocale()=='ar')
+						<h2>عن مينت ستنت</h2>
+						<p>  <br>. في السعودية BDAS Smart في المملكة المتحدة وتمثلها  Mintstint Ltd مينت ستنت هي شركة تابعة لشركة تعمل مينت ستنت بشكل اساسي كشريك موزع ومستشار لزوم ثم تقديم خدمات مبيعات ترخيص والاستشارات الفنية ودعم العملاء في منطقة اوروبا والشرق الاوسط وافريقيا</p>
+						<p>تمتلك مينت ستنت ايضا خبرة فنية وهندسية في خدمات معايرة معدات الاختبار وهي احدي الشركات التابعه للمعهد  
+							القومي المصري للمعايير وتقدم خدمات معايرة صناعية شاملة لعملائها المرموقين في مصر من خلال الخدمة والاستشارات<br>
+						علاوة علي ذلك ويمكننا تسهيل مجموعه من الخدمات الرقمية بما في ذلك علي سبيل المثال لا الحصر تحسين تصميم مواقع الويب والمحتوي التقني والهندسي والتسويق عبر البريد الالكتروني والبودكاست الصوتي وانتاج التعليقات الصوتية باللغات العربيه والاجنبيه<br> 
+					</p>
+						@endif
+                       
 
-                        <a href="#contact" class="sim-btn hvr-bounce-to-top"><span>@if(app()->getLocale()=='ar'){{ trans('labels.Contact Us')}}@endif
+                        <a href="#contact" class="sim-btn hvr-bounce-to-top"><span>
+							@if(app()->getLocale()=='ar'){{ trans('labels.Contact Us')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.اتصل بنا')}}@endif</span></a>
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -177,8 +181,8 @@
             </div><!-- end title -->
 
             <div class="row">
-				<div class="col-md-3">
-                    <div class="services-inner-box">
+				<div class="col-md-3">@if(app()->getLocale()=='en')   <div class="services-inner-box"> @endif
+                  @if(app()->getLocale()=='ar')  <div class="services-inner-box text-right">@endif
 						<div class="ser-icon">
 							<!-- <i class="flaticon-seo"></i> -->
 							<img src="assets/images/zoom.png" alt="zoomlogo">
@@ -186,51 +190,74 @@
 						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Zoom Services')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.Zoom خدمات')}}@endif</h2>
 						<p>@if(app()->getLocale()=='en')Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online.@endif
-							@if(app()->getLocale()=='ar')مينت ستنت هو شريك المبيعات المعتمد لـ زوم. خدمتنا الفريدة هي ZOOM LICENSE للتعليم والمؤسسات والمهنية. لا تقلق بشأن عملك بشأن التغييرات في فيروس كورونا وظهور طفرات الفيروس. نحن هنا لمساعدتك على الاتصال ، توفر لك مينت ستنت حلولاً تقنية لإدارة علامتك التجارية عن بُعد والحصول على الأفضل بسعر أقل من الإنترنت. للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد. احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز@endif 	
+							@if(app()->getLocale()=='ar')
+							 مينت ستنت هو شريك المبيعات المعتمد لـ زوم. خدمتنا الفريدة هي  
+							 للتعليم والمؤسسات والمهنية. لا تقلق بشأن عملك بشأن التغييرات في فيروس كورونا وظهور طفرات الفيروس. نحن هنا لمساعدتك على الاتصال ، توفر لك مينت ستنت حلولاً تقنية لإدارة علامتك التجارية عن بُعد والحصول على الأفضل بسعر أقل من الإنترنت. للتواصل والتعبير عن أفكارك حتى تتمكنوا من إنجاز المزيد معًا. نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والشركات الصغيرة والأفراد. احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز@endif 	
 						</p>
 						<a class="sim-btn hvr-bounce-to-top" href="/zoom" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 						
 					</div>
                 </div><!-- end col -->
-                <div class="col-md-3">
-                    <div class="services-inner-box">
+                <div class="col-md-3">@if(app()->getLocale()=='en')
+                    <div class="services-inner-box"> @endif
+						@if(app()->getLocale()=='ar') <div class="services-inner-box text-right"> @endif
 						<div class="ser-icon">
 							<!-- <i class="flaticon-development"></i> -->
 							<img src="assets/images/crm.jpg" alt="CRM">
 						</div><br>
-						<h2>@if(app()->getLocale()=='ar'){{trans('labels.Cloud Customer Relationship Management (CRM)')}}@endif 
-						@if(app()->getLocale()=='en'){{trans('labels.نظام إدارة علاقات العملاء')}}@endif</h2>
-						<p>@if(app()->getLocale()=='ar'){{trans('labels.The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.')}}@endif 
-						@if(app()->getLocale()=='en'){{trans('labels.أداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها. نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه.')}}@endif</p>
+						@if(app()->getLocale()=='en')
+                        
+                          <h2>Cloud Customer Relationship Management (CRM)</h2>
+						  <p>The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.</p>
+						@endif
+
+						@if(app()->getLocale()=='ar')
+						<h2>نظام إدارة علاقات العملاء</h2>
+						<p>أداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها. نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه  </p>
+
+						@endif
 						<a class="sim-btn hvr-bounce-to-top" href="/crm" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 					</div>
                 </div><!-- end col -->
-				<div class="col-md-3">
-                    <div class="services-inner-box">
+				<div class="col-md-3">@if(app()->getLocale()=='en')  <div class="services-inner-box"> @endif
+                   @if(app()->getLocale()=='ar') <div class="services-inner-box text-right"> @endif
 						<div class="ser-icon">
 							<!-- <i class="flaticon-process"></i> -->
 							<img src="assets/images/Voice-Over-Demo.jpg" alt="VoiceOver"><br>
 						</div><br>
-						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Multi-Lingual Multi-Accent Voice Over Production')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.البث الصوتي متعدد اللغات')}}@endif</h2>
-						<p>@if(app()->getLocale()=='ar'){{trans('labels.Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos. MintStint offers motion-based advertising video maker service. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.تخير الأفضل ضمن نخبة من أفضل الأصوات العربية والخليجية والاجنبية للاستخدام في الرسالة الصوتية IVR او للاستخدام في مقاطع الفيديو الدعائية.تقدم منت ستنت خدمة صناعة مقاطع فيديو دعائية معتمدة على الحركة تشمل: كتابة النص ،تسجيل صوتي بكل اللهجات واللغات المختلفة وبأصوات تتلاءم مع طبيعة المنتج أو الخدمة، هندسة صوتية لإخراج الإعلان بطريقة إبداعية، لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة.')}}@endif</p>
+						@if(app()->getLocale()=='en')
+						<h2>Multi-Lingual Multi-Accent Voice Over Production</h2>
+						<p>Choose the best among a selection of the best Arab Gulf and foreign voices for use in the IVR voice message or for use in promotional videos. MintStint offers motion-based advertising video maker service. An audio recording in all different dialects and languages, with voices appropriate to the nature of the product or service.</p>
+						@endif
+						@if(app()->getLocale()=='ar')
+						<h2>البث الصوتي متعدد اللغات</h2>
+						<p> تخير الأفضل ضمن نخبة من أفضل الأصوات العربية والخليجية والاجنبية للاستخدام في الرسالة الصوتية  للاستخدام في مقاطع الفيديو الدعائية.تقدم منت ستنت خدمة صناعة مقاطع فيديو دعائية معتمدة على الحركة تشمل: كتابة النص ،تسجيل صوتي بكل اللهجات واللغات المختلفة وبأصوات تتلاءم مع طبيعة المنتج أو الخدمة، هندسة صوتية لإخراج الإعلان بطريقة إبداعية، لقطات إبداعية للإعلان تعتمد على برامج تصميم الحركة
+						</p>
+
+						@endif
 						<a class="sim-btn hvr-bounce-to-top" href="/voiceover" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 					</div>
                 </div><!-- end col -->
-				<div class="col-md-3">
-                    <div class="services-inner-box">
+				<div class="col-md-3">@if(app()->getLocale()=='en')   <div class="services-inner-box"> @endif
+                    @if(app()->getLocale()=='ar')<div class="services-inner-box text-right"> @endif
 						<div class="ser-icon">
 							<!-- <i class="flaticon-discuss-issue"></i> -->
 							<img src="assets/images/design.png" alt="design">
 						</div>
-						<h2>@if(app()->getLocale()=='ar'){{ trans('labels.Designing and Creating Websites and E-Stores')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.تصميم وإنشاء المواقع والمتاجر الالكترونية')}}@endif</h2>
-						<p>@if(app()->getLocale()=='ar'){{trans('labels.It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers.')}}@endif
-							@if(app()->getLocale()=='en'){{trans('labels.لقد أصبح الآن من الضرورى ان تمتلك تصميم موقع انترنت جذاب وذكى وأيضا لوحة تحكم كاملة للتحكم وإدارة جميع محتويات الموقع من صور ونصوص وفيديوهات وغيرها من محتويات موقع الانترنت، حيث ان موقع الانترنت يلعب دورا هاما وأساسيا فى تقديم السياسات والخدمات والمنتجات المقدمة من قبل الشركة للعملاء.لدينا من الخبرات ما يجعلنا من أفضل شركات تصميم مواقع الانترنت بتقديم خدماتنا لعدد ضخم من عملائنا وذلك ناتج من كسب ثقة عملائنا فى اداء أعمالنا بافضل الطرق وأفضل التقنيات.')}}@endif</p>
+						@if(app()->getLocale()=='en')
+                         <h2>Designing and Creating Websites and E-Stores</h2>
+						 <p>It has now become necessary to have an attractive and smart website design as well as a complete control panel to control and manage all the contents of the website from images, texts, videos and other website contents, as the website plays an important and essential role in providing the policies, services and products provided by the company to customers.</p>
+
+						@endif
+						@if(app()->getLocale()=='ar')
+						<h2>تصميم وإنشاء المواقع والمتاجر الالكترونية</h2>
+						<p>لقد أصبح الآن من الضرورى ان تمتلك تصميم موقع انترنت جذاب وذكى وأيضا لوحة تحكم كاملة للتحكم وإدارة جميع محتويات الموقع من صور ونصوص وفيديوهات وغيرها من محتويات موقع الانترنت، حيث ان موقع الانترنت يلعب دورا هاما وأساسيا فى تقديم السياسات والخدمات والمنتجات المقدمة من قبل الشركة للعملاء.لدينا من الخبرات ما يجعلنا من أفضل شركات تصميم مواقع الانترنت بتقديم خدماتنا لعدد ضخم من عملائنا وذلك ناتج من كسب ثقة عملائنا فى اداء أعمالنا بافضل الطرق وأفضل التقنيات</p>
+						@endif
+						
+						
 						<a class="sim-btn hvr-bounce-to-top" href="/design" target="_blank">@if(app()->getLocale()=='ar'){{ trans('labels.Know More')}}@endif
 							@if(app()->getLocale()=='en'){{trans('labels.اعرف المزيد')}}@endif</a>
 					</div>
@@ -263,7 +290,7 @@
 			<div class="gallery-list row">
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_b">
 					<div class="gallery-single fix">
-						<img src="assets/uploads/saudiElectricityCompany.jpg" class="img-fluid" alt="Image">
+						<img src="assets/uploads/saudiElectricityCompany.jpg" class="img-fluid mx-auto d-block" alt="Image">
 						<div class="img-overlay">
 							<a href="assets/uploads/saudiElectricityCompany.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
@@ -272,7 +299,7 @@
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_b">
 					<div class="gallery-single fix">
-						<img src="assets/uploads/marsenergo.jpg" class="img-fluid" alt="Image">
+						<img src="assets/uploads/marsenergo.jpg" class="img-fluid mx-auto d-block" alt="Image">
 						<div class="img-overlay">
 							<a href="assets/uploads/marsenergo.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
@@ -281,7 +308,7 @@
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
 					<div class="gallery-single fix">
-						<img src="assets/uploads/keyTime.jpg" class="img-fluid" alt="Image">
+						<img src="assets/uploads/keyTime.jpg" class="img-fluid mx-auto d-block" alt="Image">
 						<div class="img-overlay">
 							<a href="assets/uploads/keyTime.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
@@ -290,7 +317,7 @@
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_b gal_a">
 					<div class="gallery-single fix">
-						<img src="assets/uploads/bdas.jpg" class="img-fluid" alt="Image">
+						<img src="assets/uploads/bdas.jpg" class="img-fluid mx-auto d-block" alt="Image">
 						<div class="img-overlay">
 							<a href="assets/uploads/bdas.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
@@ -299,7 +326,7 @@
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_a gal_c">
 					<div class="gallery-single fix">
-						<img src="assets/uploads/Wanna Talk Group.jpeg" class="img-fluid" alt="Image">
+						<img src="assets/uploads/Wanna Talk Group.jpeg" class="img-fluid mx-auto d-block" alt="Image">
 						<div class="img-overlay">
 							<a href="assets/uploads/Wanna Talk Group.jpeg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
@@ -308,7 +335,7 @@
 				
 				<div class="col-md-4 col-sm-6 gallery-grid gal_c gal_a">
 					<div class="gallery-single fix">
-						<img src="assets/uploads/opc.jpg" class="img-fluid" alt="Image">
+						<img src="assets/uploads/opc.jpg" class="img-fluid mx-auto d-block" alt="Image">
 						<div class="img-overlay">
 							<a href="assets/uploads/opc.jpg" data-rel="prettyPhoto[gal]" class="hoverbutton global-radius"><i class="fa fa-picture-o"></i></a>
 						</div>
@@ -329,9 +356,9 @@
             </div><!-- end title -->
 			
 			<div class="row">
-				<div class="col-md-4 col-sm-6 col-lg-4">@if(session('lang')=='en') <div class="post-box"> @endif
-					@if(session('lang')=='ar')<div class="post-box text-right">@endif
-						@if(session('lang')=='ar')
+				<div class="col-md-4 col-sm-6 col-lg-4">@if(app()->getLocale()=='en') <div class="post-box"> @endif
+					@if(app()->getLocale()=='ar')<div class="post-box text-right">@endif
+						@if(app()->getLocale()=='ar')
 						<div class="post-thumb">
 							<br>
 							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">Video Conference <br>اعتمد تقنية مؤتمرات الفيديو في اعمالك</h2>
@@ -354,13 +381,13 @@
                             </ul> 
 							--}}
 
-							<h3 style="font-weight: bold; "><li> كاميرات عالية الجودة مدعومة بالذكاء الاصطناعي</li>
-							<li>اجتماعات صوت وصورة بشكل مبسط</li>
-						    <li> USB امكانية التوصيل والتشغيل عبر</li>
-						<li>نظام متوافق مع منصات مؤتمرات الفيديو السائدة </li></h3>
+							<h3 style="font-weight: bold; "><li> كاميرات عالية الجودة مدعومة بالذكاء الاصطناعي • </li>
+							<li>اجتماعات صوت وصورة بشكل مبسط • </li>
+						    <li> USB امكانية التوصيل والتشغيل عبر • </li>
+						<li>نظام متوافق مع منصات مؤتمرات الفيديو السائدة • </li></h3>
 						</div>
 						@endif
-						@if(session('lang')=='en')
+						@if(app()->getLocale()=='en')
 						<div class="post-thumb">
 							<br>
 							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">Video Conference <br>Adopt video conferencing <br>technology in your business</h3>
@@ -384,18 +411,18 @@
                             </ul> 
 							--}}
 
-							<h3 style="font-weight:500; text-align:left; color:black; "><br> <br><li>High quality cameras powered by artificial intelligence.</li>
-							<li>Simplified video and audio meetings.</li>
-						    <li>Plug-and-play capability via USB.</li>
-						<li>Compatible with mainstream video conferencing platforms.</li></h3>
+							<h3 style="font-weight:500; text-align:left; color:black; "><br> <br><li>• High quality cameras powered by artificial intelligence.</li>
+							<li>• Simplified video and audio meetings.</li>
+						    <li>• Plug-and-play capability via USB.</li>
+						<li>• Compatible with mainstream video conferencing platforms.</li></h3>
 						</div>
 						@endif
 
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">@if(session('lang')=='en') <div class="post-box"> @endif
-					@if(session('lang')=='ar')<div class="post-box text-right">@endif
-						@if(session('lang')=='ar')
+				<div class="col-md-4 col-sm-6 col-lg-4">@if(app()->getLocale()=='en') <div class="post-box"> @endif
+					@if(app()->getLocale()=='ar')<div class="post-box text-right">@endif
+						@if(app()->getLocale()=='ar')
 						<div class="post-thumb">
 							<br>
 							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">CRM <br>عندك مؤسسة او شركة او مصنع</h2>
@@ -424,15 +451,15 @@
                              
 							<h3 style="font-weight: bold; text-align:right; ">
 								
-								<li>هتابع وتقيم فريق المبيعات لديك</li>
-							<li>هتعرف مصادر عملاؤك </li>
-						    <li>هتقدر تتابع العملاء والتاريخ الكامل لعملائك</li>
-							<li>هتقدر تضيف اكتر من منتج او خدمة</li>
-						<li>هتقدر تعرف المناطق المستهلكه للخدمه الي بتقدمها</li>
+								<li>هتابع وتقيم فريق المبيعات لديك • </li>
+							<li>هتعرف مصادر عملاؤك • </li>
+						    <li>هتقدر تتابع العملاء والتاريخ الكامل لعملائك • </li>
+							<li>هتقدر تضيف اكتر من منتج او خدمة • </li>
+						<li>هتقدر تعرف المناطق المستهلكه للخدمه الي بتقدمها • </li>
 					</h3>
 						</div>
 						@endif
-						@if(session('lang')=='en')
+						@if(app()->getLocale()=='en')
 						<div class="post-thumb">
 							<br>
 							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">CRM<br>Do you have an organization, <br>company or factory?</h3>
@@ -458,29 +485,28 @@
 							--}}
 
 							<h3 style="font-weight:500;text-align:left; color:black; ">
-								<li>Follow and evaluate your sales team.</li>
-							<li>Get to know your customers' sources.</li>
-						    <li>track clients and the complete history of your clients.</li>
-						<li>add more than one product or service.</li>
-					<li>Know the consumer areas of the service you provide.</li></h3>
+								<li>• Follow and evaluate your sales team.</li>
+							<li>• Get to know your customers' sources.</li>
+						    <li>• track clients and the complete history of your clients.</li>
+						<li>• add more than one product or service.</li>
+					<li>• Know the consumer areas of the service you provide.</li></h3>
 						</div>
 						@endif
 
 					</div>
 				</div>
-				<div class="col-md-4 col-sm-6 col-lg-4">@if(session('lang')=='en') <div class="post-box"> @endif
-					@if(session('lang')=='ar')<div class="post-box text-right">@endif
-						@if(session('lang')=='ar')
+				<div class="col-md-4 col-sm-6 col-lg-4">@if(app()->getLocale()=='en') <div class="post-box"> @endif
+					@if(app()->getLocale()=='ar')<div class="post-box text-right">@endif
+						@if(app()->getLocale()=='ar')
 						<div class="post-thumb">
 							<br>
-							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">CRM <br>عندك مؤسسة او شركة او مصنع</h2>
-							<h3 style="font-weight:bolder; color:black; text-align:center;">يبقي انت محتاج نظام ادارة علاقات  <br> العملاء هيساعدك في ادارة اعمالك لدي
-								</h3>
+							<h2 style="color:#1F4D4D; font-weight:bold; text-align:center">Miniature Circuit Breaker <br></h2>
+							<h3 style="font-weight:bolder; color:black; text-align:center;">معدات الاحتبار</h3>
 							{{-- <h2 style="text-align:center; color:#57AE77; font-weight:500;">Mintstint</h2>
 							<h3 style="text-align:center; color:#BB4F4F; font-weight:bold;">اطلب الاستشارة الان</h3> --}}
 							<img src="assets/uploads/crm2.jpeg" class="img-fluid" alt="post-img" />
-						<img src="assets/uploads/crmpost.jpg" class="img-fluid" alt="post-img" />
-						<br>
+						<img src="assets/uploads/cba.jpg" class="img-fluid" alt="post-img" />
+					
 					
 							<div class="date text-right">
 								<span>01</span>
@@ -499,22 +525,20 @@
                              
 							<h3 style="font-weight:bold; text-align:right; ">
 								
-							<li>انشاء تنبيهات للموظفين عن اي متطلبات اوتعديلات يجب تنفيذها</li>
-							<li>اضافة اهداف الفريق من عدد المكالمات والزيارات </li>
-						    <li>اجمالي المبيعات السنوية والشهرية</li>
-							<li>مراقبه ومتابعه الحملات الاعلانية</li>
-						<li>تقارير شامله عن الموظفين والاعلانات والعملاء</li>
+							<li>حقن تيار عالي الجودة ومراقبة الرحلة لخصائص التيار الزائد والاختبار الحراري لقواطع الدائرة</li>
+							<li>يتيح اختبارالكشف عن الانحرافات في الخصائص ومراقبة الجودة لهذه الأجهزة للشركات</li>
+						    
 					</h3>
 						</div>
 						@endif
-						@if(session('lang')=='en')
+						@if(app()->getLocale()=='en')
 						<div class="post-thumb">
 							<br>
-							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">CRM<br>Do you have an organization, <br>company or factory?</h3>
-							<h6 style="font-weight:bolder; color:black; text-align:center;">Enjoy professional audio and video communications through video conferencing devices
-								</h6>
+							<h3 style="color:#1F4D4D; font-weight:bolder; text-align:center">Miniature Circuit Breaker<br>Test Equipment</h3>
+							{{-- <h6 style="font-weight:bolder; color:black; text-align:center;">
+								</h6> --}}
 								<img src="assets/uploads/crm2.jpeg" class="img-fluid" alt="post-img" />
-						<img src="assets/uploads/crmpost.jpg" class="img-fluid" alt="post-img" />
+						<img src="assets/uploads/cba.jpg" class="img-fluid" alt="post-img" />
 						
 							<div class="date text-right">
 								<span>01</span>
@@ -532,11 +556,9 @@
 							--}}
 
 							<h3 style="font-weight:500;text-align:left; color:black; ">
-								<li>Create alerts to employees about any requirements or modifications that must be implemented.</li>
-							<li>Add team goals from the number of calls and visits.</li>
-						    <li>Total annual and monthly sales.</li>
-						<li>Monitor and follow up advertising campaigns.</li>
-					<li>Comprehensive reports on employees, advertisements and customers.</li></h3>
+								<li>• High-quality current injection and trip monitoring for overcurrent characteristic and thermal testing of thermal magnetic circuit breakers.</li>
+							<li>• The testing of MCB’s enables the detection of the deviations in the characteristics and the quality control of these devices for the companies which manufactures or sells them. </li>
+						   </h3>
 						</div>
 						@endif
 
@@ -763,10 +785,8 @@
 				   </div>
 				</div>
 				<div class="footer-right">
-					
-					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6907.60503193607!2d31.204!3d30.042522999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584132c780343d%3A0xceeb5ac9d88cf5ed!2s45%20Kambez%2C%20Ad%20Doqi%2C%20Dokki%2C%20Giza%20Governorate%203751214!5e0!3m2!1sen!2seg!4v1653488833286!5m2!1sen!2seg" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-					
-
+					<iframe  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6907.60503193607!2d31.204!3d30.042522999999996!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14584132c780343d%3A0xceeb5ac9d88cf5ed!2s45%20Kambez%2C%20Ad%20Doqi%2C%20Dokki%2C%20Giza%20Governorate%203751214!5e0!3m2!1sen!2seg!4v1653488833286!5m2!1sen!2seg" width="350" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>	
+				
 				</div>
                 <div class="footer-center">
 					<div>

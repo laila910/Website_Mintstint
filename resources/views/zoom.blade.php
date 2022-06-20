@@ -78,7 +78,7 @@
               </li>
               @if(session('lang')=='ar')<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/en')}}">en</a>
-			</li>
+			</li>@endif
               @if(session('lang')=='en')<li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="{{url('/Lang/ar')}}">ar</a>
             
@@ -124,8 +124,13 @@
                         <h2>@if(session('lang')=='ar') <h2 class="text-right"> {{ trans('labels.Zoom Services')}}</h2>@endif
 							@if(session('lang')=='en') {{trans('labels.Zoom خدمات')}}@endif</h2>
                         <p>@if(session('lang')=='en') Mintstint is the authorized Sales partner of Zoom. Our Unique  Service is ZOOM LICENCE For education , enterprise and Professional .Don’t worry about your business about the changes in Coronavirus and the emergence of mutations of the virus. Get Meetings, Phone and Chat together on any device. We’re here to help you connect,  Mintstint provides you with technical solutions to manage your brand remotely and get the best with lower price than online. communicate, and express your ideas so you can get more done together. We’re proud to be trusted by millions of enterprises, small businesses, and individuals.<br> Get Meetings, Phone and Chat together on any device:-<br>1- Move from a chat or a phone call to a meeting with a single click.<br>2-Enjoy industry leading usability with top-rated video and audio quality.<br>3-Apps are available for Windows, MacOS and Linux as well as for iOS and Android OS.<br> @endif 
-							@if(session('lang')=='ar') <p class="text-right">  مينت ستنت هي الشريك المعتمد لزوم.خدماتنا الفريدة للتعليم والمؤسسات المهنية لا تقلق بشأن عملك بشأن التغيرات في فيرس كورونا وظهور طفرات الفيرس.<br> نحن هنا لمساعدتك علي الاتصال حيث توفر مينت ستنت حلولا تقنية لادارة علامتك التجارية عن بعد والحصول علي الافضل بسعر اقل من الانترنت.للتواصل والتعبير عن أفكارك حتي تتمكنو من انجازالمزيد معا .نحن فخورون بأن نكون موثوقين من قبل ملايين الشركات والافراد<br> احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز.<br> الانتقال من دردشة أو مكالمة هاتفية إلى اجتماع بنقرة واحدة. <br>استمتع بقابلية الاستخدام الرائدة في الصناعة مع جودة الفيديو والصوت الأعلى تصنيفًا.<br>
-                        Android OS و IOS وكذلك لنظامي التشغيل Linux و MacOS و windows التطبيقات متاحة لانظمة </p>@endif</p>
+							@if(session('lang')=='ar') <p class="text-right">  مينت ستنت هي الشريك المعتمد لزوم.خدماتنا الفريدة 
+                                . للتعليم والمؤسسات المهنية لا تقلق بشأن عملك بشأن التغيرات في فيرس كورونا وظهور طفرات الفيرس<br> نحن هنا لمساعدتك علي الاتصال حيث توفر مينت ستنت حلولا تقنية لادارة علامتك التجارية عن بعد والحصول علي الافضل بسعر اقل من الانترنت.للتواصل والتعبير عن أفكارك حتي تتمكنو من انجازالمزيد معا .نحن 
+                                .فخورون بأن نكون موثوقين من قبل ملايين الشركات والافراد<br>
+                                 .احصل على اجتماعات وهاتف ودردشة معًا على أي جهاز<br> 
+                                 .الانتقال من دردشة أو مكالمة هاتفية إلى اجتماع بنقرة واحدة<br>
+                              .استمتع بقابلية الاستخدام الرائدة في الصناعة مع جودة الفيديو والصوت الأعلى تصنيفًا<br>
+                    .Android OS و IOS وكذلك لنظامي التشغيل Linux و MacOS و windows التطبيقات متاحة لانظمة </p>@endif</p>
                        
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
@@ -205,9 +210,13 @@
                             <strong>Simple and intuitive:</strong> Empower your end users to make phone calls with the same ease and familiarity as Zoom video meetings.<br><strong>Scalable and Trusted Communications:</strong> Global Coverage,Secure Communications, Trusted Architecture, Provider Flexibility, BYOC (Bring Your Own Carrier).<br><strong> for your evolving needs:</strong>Get Meetings, Phone and Chat together on any device.<br>1. Zoom Phone has a track record of rapid innovation, capitalizing on the established global infrastructure and audio quality of Zoom.<br>2. With hundreds of features, and more added every month, you can count on Zoom Phone to meet your business requirements.<br> 3. Zoom Phone tightly integrates with top business applications, contact center partners, and hardware providers to ensure communications can occur in context.<br>4. Leverage Zoom Phone's robust set of APIs to create customized business solutions that let you make and receive phone calls right within your workflow.<br>@endif
                             @if(session('lang')=='ar')
                             <h2>Zoom Phone</h2><p>هو نظام هاتف سحابي غني بالميزات للشركات من جميع الأحجام</p>
-                            بسيطة وبديهية: مكّن المستخدمين النهائيين لديك من إجراء مكالمات هاتفية بنفس السهولة والألفة التي تتمتع بها اجتماعات <br>
-                            اتصالات قابلة للتطوير وموثوق بها: التغطية العالمية ، والاتصالات الآمنة ، والبنية الموثوقة ، ومرونة المزود والناقل الخاص بك<br> مبتكرة لاحتياجاتك المتطورة: احصل على الاجتماعات والهاتف والدردشة معًا على أي جهاز. <br><br>     يتمتع بسجل حافل من الابتكار السريع ، مستفيدًا من البنية التحتية العالمية الراسخة وجودة الصوت .<br> مع مئات الميزات والمزيد المضاف كل شهر ، يمكنك الاعتماد على  لتلبية متطلبات عملك. <br> يتكامل  بإحكام مع أفضل تطبيقات الأعمال وشركاء مراكز الاتصال وموفري الأجهزة لضمان حدوث الاتصالات في السياق. <br> استفد من مجموعة واجهات برمجة التطبيقات القوية في  لإنشاء حلول أعمال مخصصة تتيح لك إجراء مكالمات هاتفية واستقبالها في إطار سير عملك.
-                            @endif
+                            <strong> بسيطة وبديهية :</strong> مكّن المستخدمين النهائيين لديك من إجراء مكالمات هاتفية بنفس السهولة والألفة التي تتمتع بها اجتماعات <br>
+                            <strong>اتصالات قابلة للتطوير وموثوق بها:</strong> التغطية العالمية.والاتصالات الامنة والبنية    الموثوقة ومرونة المزود والناقل الخاص بك<br>
+                            <strong>مبتكرة لاحتياجاتك المتطورة :</strong> احصل علي الاجتماعات والهاتف والدردشة معا غي اي جهاز<br><br>
+                            يتمتع بسجل حافل من الابتكار السريع ، مستفيدًا من البنية التحتية العالمية الراسخة وجودة الصوت<br>
+                            مع مئات الميزات والمزيد المضاف كل شهر ، يمكنك الاعتماد على  لتلبية متطلبات عملك<br>
+                            يتكامل  بإحكام مع أفضل تطبيقات الأعمال وشركاء مراكز الاتصال وموفري الأجهزة لضمان حدوث الاتصالات في السياق <br>
+                            استفد من مجموعة واجهات برمجة التطبيقات القوية في  لإنشاء حلول أعمال مخصصة تتيح لك إجراء مكالمات هاتفية واستقبالها في اطار سير عملك @endif
                     </div><!-- end messagebox -->
                 </div><!-- end col -->
 
@@ -229,7 +238,7 @@
                                 @endif 
                             @if(session('lang')=='ar')
                             <h2>نهج مدروس للاجتماعات بالهاتف </h2>
-                            <p>يحتاج المحترفون اليوم إلى أن يكونوا قادرين على العمل وعقد المؤتمرات عبر الفيديو أينما كانوا. يوفر  للجوال نفس التجربة الرائعة التي تتوقعها من عميل سطح المكتب والمزيد. <br><br>
+                            <p>يحتاج المحترفون اليوم إلى أن يكونوا قادرين على العمل وعقد المؤتمرات عبر الفيديو أينما كانوا. يوفر  للجوال نفس التجربة الرائعة التي تتوقعها من عميل سطح المكتب والمزيد <br><br>
                                 (+iPhone 8) قم بتشغيل الخلفيات الافتراضية وحدد الصورة التي تختارها <br>
                                 شارك شاشتك وأضف تعليقًا توضيحيًا مشتركًا <br>
                                 (iPhone فقط) Apple Carplay استخدم وضع القيادة الآمنة أو
@@ -266,8 +275,8 @@
                             3. Connect external users while keeping information safe.<br></p>
                             @endif
                         @if(session('lang')=='ar')
-                        <p>Zoom Chat تواصل على الفور على  <br><br> تعمل الرسائل المستمرة المتكاملة على تبسيط التعاون في مساحة العمل عبر عملاء سطح المكتب والأجهزة المحمولة.<br> ابدأ اجتماعًا أو مكالمة هاتفية على الفور.<br>
-                            مشاركة الملفات والبحث في المحتوى في مجموعات عامة أو خاصة.<br> ربط المستخدمين الخارجيين مع الحفاظ على المعلومات آمنة. </p>
+                        <p>Zoom Chat تواصل على الفور على  <br><br> تعمل الرسائل المستمرة المتكاملة على تبسيط التعاون في مساحة العمل عبر عملاء سطح المكتب والأجهزة المحمولة<br> ابدأ اجتماعًا أو مكالمة هاتفية على الفور<br>
+                            مشاركة الملفات والبحث في المحتوى في مجموعات عامة أو خاصة<br> ربط المستخدمين الخارجيين مع الحفاظ على المعلومات آمنة </p>
                         @endif
                         
                     </div><!-- end messagebox -->
@@ -399,7 +408,7 @@
                 <div class="col-md-6">
                     <div class="center-box-pro wow fadeIn">
                         {{-- <img src="assets/uploads/event.mp4" alt="" class="img-fluid img-rounded"> --}}
-                        <video width="600" height="500" controls autoplay>
+                        <video id="vid"  controls autoplay>
                             <source src="assets/uploads/event.mp4" type="video/mp4">
                             <source src="movie.ogg" type="video/ogg">
                           Your browser does not support the video tag.

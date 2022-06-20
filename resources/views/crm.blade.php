@@ -64,7 +64,7 @@
             </li>
             @if(session('lang')=='ar')<li class="nav-item">
 				<a class="nav-link js-scroll-trigger" href="{{url('/Lang/en')}}">en</a>
-			</li>
+			</li>@endif
               @if(session('lang')=='en')<li class="nav-item">
                 <a class="nav-link js-scroll-trigger" href="{{url('/Lang/ar')}}">ar</a>
             
@@ -99,17 +99,26 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-12">
-                    <div class="message-box">                        
-                        <h2>@if(session('lang')=='ar'){{ trans('labels.CRM Services')}}@endif
-                            @if(session('lang')=='en'){{trans('labels.CRM خدمات')}}@endif</h2>
-                        <p>@if(session('lang')=='en')The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.<br>Helps you to create a clear database for your customers with a full link to SMS and email:<br>
-                            1.Full support for the Arabic language<br>2.Support for all phones and tablets through Mintstint CRM App<br>3.Easy to upgrade and add new updates.<br>4.Using CRM can improve your lead records rate by 500%.<br>@endif 
-                        @if(session('lang')=='ar')اداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها<br>نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه.يساعد فريق المبيعات علي متابعة الطلبات المختلفة واخر التحديثات الخاصة بكل عميل وحفظها للتعامل معها في الوقت الحاضر او مستقبلا مما يرفع من أداء الفريق وزيادة فرص المبيعات لمنشئتك.يسهل على جميع أفراد فريق العمل التواصل فيما يخص مراحل المشروع منذ تدشينه مروراً بمراحله المختلفة وحتى الانتهاء منه. يساعد المسئولين التنفيذيين على التعرف على كل جوانب العمل ومراحل المشاريع مما يسهل عملية التسويق وزيادة المبيعات. نظام مهم جداً لأي فريق عمل خاصة تلك الشركات التي أجبرتها ظروف الحجر الصحي على العمل من خلال شبكة الانترنت.
-                        @endif</p>
+                <div class="col-md-12">@if(session('lang')=='en')
+                    <div class="message-box">        @endif
+                        @if(session('lang')=='ar')  <div class="message-box text-right"> @endif  
+                            
+                            @if(session('lang')=='en') 
+                            <h2>CRM Services</h2>
+                            <p>The system allows you to fully control the details you have created to develop your business: Move your team to a higher level of performance, Create a database for your customers, Follow-up potential customers that’s where Mintstint CRM comes in loaded with features to help you start and grow your business.<br>Helps you to create a clear database for your customers with a full link to SMS and email:<br>
+                                1.Full support for the Arabic language<br>2.Support for all phones and tablets through Mintstint CRM App<br>3.Easy to upgrade and add new updates.<br>4.Using CRM can improve your lead records rate by 500%.<br>
+                            </p>
+                            
+                            @endif
+                            @if(session('lang')=='ar')
+                            <h2> CRM خدماتنا</h2>
+                            <p>                        اداتك الرسمية والموثقة، الأمثل في تأمين قاعدة ضخمة لبيانات العملاء وارشفة جميع عمليات التواصل والمبيعات والاستفسارات والشكاوى والتقييمات الواردة من قبل العميل والتي تبني بما يتكيف كليا مع متطلبات وفروع وخدمات المنشأة وطبيعتها<br>نظام يتم برمجته بشكل سحابي، فلا حاجة إلى وجود أجهزة معينة. كما أنه نظام ذكي سهل دمجه مع موقعك الالكتروني لاستقبال وحفظ طلبات التواصل بسهوله ويسر وضمان عدم فقدان بيانات أي عميل ، فضلاً عن انخفاض تكلفة إنشاؤه.يساعد فريق المبيعات علي متابعة الطلبات المختلفة واخر التحديثات الخاصة بكل عميل وحفظها للتعامل معها في الوقت الحاضر او مستقبلا مما يرفع من أداء الفريق وزيادة فرص المبيعات لمنشئتك.يسهل على جميع أفراد فريق العمل التواصل فيما يخص مراحل المشروع منذ تدشينه مروراً بمراحله المختلفة وحتى الانتهاء منه. يساعد المسئولين التنفيذيين على التعرف على كل جوانب العمل ومراحل المشاريع مما يسهل عملية التسويق وزيادة المبيعات. نظام مهم جداً لأي فريق عمل خاصة تلك الشركات التي أجبرتها ظروف الحجر الصحي على العمل من خلال شبكة الانترنت.
+                            </p>
 
-                       
-                    </div><!-- end messagebox -->
+                            @endif
+                        
+
+                         </div><!-- end messagebox -->
                 </div><!-- end col -->
 
                 
@@ -154,23 +163,25 @@
                     <P>By Using Short Message Service SMS you can send notifying SMS and track tickets with your own Sender ID. </P>@endif
                 </div>
             </div>
-            <div class="row">
-                <div class="message-box">@if(session('lang')=='ar')
+            @if(session('lang')=='ar')
+            <div class="row text-right">
+                <div class="message-box">
                     <h2>مميزات العمل باستخدام نظام إدارة علاقات العملاء</h2>
                     <p><ul>
-                        <li>• تحسين أداء أقسام خدمة العملاء، والتسويق، والمبيعات داخل الشركة.
+                        <li> تحسين أداء أقسام خدمة العملاء، والتسويق، والمبيعات داخل الشركة• 
                         </li>
-                        <li>• المساعدة في إطلاق حملات تسويقية ناجحة من خلال ما يتم جمعه من بيانات عن العملاء.
+                        <li>المساعدة في إطلاق حملات تسويقية ناجحة من خلال ما يتم جمعه من بيانات عن العملاء• 
                         </li>
-                        <li>• التواصل بشكل أفضل مع العميل وبالتالي معرفة رغباته واحتياجاته وأنماط الشراء لديه.
+                        <li> التواصل بشكل أفضل مع العميل وبالتالي معرفة رغباته واحتياجاته وأنماط الشراء لديه• 
                         </li>
-                        <li>• الترابط بين الإدارات المختلفة داخل الشركة الواحدة مما يسهل مسار العمل ويساعد في تحسين أداء الشركة بوجه عام.
+                        <li> الترابط بين الإدارات المختلفة داخل الشركة الواحدة مما يسهل مسار العمل ويساعد في تحسين أداء الشركة•  بوجه عام
                         </li>
                         
-                    </ul></p>@endif
+                    </ul></p>
                 </div>
 
             </div>
+            @endif
 
             
         </div><!-- end container -->
@@ -185,7 +196,7 @@
            
         </div>
         <div class="row">
-            <div class="col-md-6">
+            <div class="col-md-6"> 
                 <div class="services-inner-box">
                     <div class="ser-icon">
                         <i class="fa fa-cog" aria-hidden="true"></i>
@@ -378,8 +389,8 @@
                
             </div>
             <div class="row">
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-cog" aria-hidden="true"></i>
                         </div>
@@ -393,8 +404,8 @@
     
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-briefcase" aria-hidden="true"></i>
                         </div>
@@ -406,8 +417,8 @@
     
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-book" aria-hidden="true"></i>
                         </div>
@@ -417,8 +428,8 @@
     
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-envelope" aria-hidden="true"></i>
                         </div>
@@ -428,8 +439,8 @@
     
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-cogs" aria-hidden="true"></i>
                         </div>
@@ -443,8 +454,8 @@
     
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-file-text" aria-hidden="true"></i>
                         </div>
@@ -455,8 +466,8 @@
                             هذا النموذج سيتم نقل بيانات النموذج الى النظام مباشره.</p><br>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-filter" aria-hidden="true"></i>
                         </div>
@@ -467,8 +478,8 @@
                             فى فلتر اخر مما يسهل عمليه البحث</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-comments-o" aria-hidden="true"></i>
                         </div>
@@ -479,8 +490,8 @@
                         </p><br><br><br>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-user" aria-hidden="true"></i>
                         </div>
@@ -489,8 +500,8 @@
                             و هواتف و اي معلومات اخرى.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-tachometer" aria-hidden="true"></i>
                         </div>
@@ -500,8 +511,8 @@
                             وغيرها مع امكانيه تحديد ما ترغب ان يتم عرض بها.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-ticket" aria-hidden="true"></i>
                         </div>
@@ -510,8 +521,8 @@
                             اخرى وتكون مرتبطه مباشره بجهات الاتصال.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-calendar" aria-hidden="true"></i>
                         </div>
@@ -520,8 +531,8 @@
                             عن طريق رسائل نصيه او ايميلات.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-file" aria-hidden="true"></i>
                         </div>
@@ -530,8 +541,8 @@
                             تقسيمها وإدارتها بسهوله.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-recycle" aria-hidden="true"></i>
                         </div>
@@ -540,8 +551,8 @@
                             يحــذفها نهائيا من النظام لا من يملك الصلاحيات لذلك.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-info-circle" aria-hidden="true"></i>
                         </div>
@@ -551,8 +562,8 @@
                             معرفه جميع ما يتعلق ب كيفيه التعامل مع طلبات العملاء.</p><br>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-signal" aria-hidden="true"></i>
                         </div>
@@ -563,8 +574,8 @@
                             والايميلات ومتابعه الطلبات والتذكير بها وغيره الكثير.</p>
                     </div>
                 </div>
-                <div class="col-md-6">
-                    <div class="services-inner-box">
+                <div class="col-md-6">@if(session('lang')=='ar')
+                    <div class="services-inner-box text-right">@endif
                         <div class="ser-icon">
                             <i class="fa fa-envelope-o" aria-hidden="true"></i>
                         </div>

@@ -3,7 +3,7 @@ return[
 "Home"=>"الصفحة الرئيسية",
 "About Us"=>"عننا",
 "Services"=>"الخدمات",
-"Our Partners"=>"شركائنا",
+"Our Partners"=>"شركاء النجاح",
 "Our Vendors"=>"موردينا",
 "Blog"=>"المدونة",
 "FAQ"=>"الاسئلة الشائعة",
